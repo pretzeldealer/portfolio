@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+
+<!--link to Bootstrap js-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!--link to Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PTSans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/qfr8gdz.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+
+<div id="menuIcon" onClick="navShowHide()">
+    <img src="media/decoration/menu.svg">
+</div>
+
+ <nav id="nav">
+    <a href="work.html"><div class="navOpt" id="work">Work</div></a>
+    <a href="index.html"><div class="navOpt" id="home">Home</div></a>
+    <a href="aboutMe.html"><div class="navOpt" id="aboutMe">About Me</div></a>
+</nav>
+
+
+<div class="intro" style="display:grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 1rem;">
+
+<div style="grid-column: 1/3;">
+    <h1 class="workTitle">Cassette Player Instructional Graphic</h1>
+
+    <p>A combination of written instructions, labels, and visual graphics, this graphic informs a user on the anatomy of the Philips Stereo/Radio Cassette Player and how to use its cassette player function. Pulling on inspiration from the product’s era, the illustrations and overall graphic are stylized to convey the sense of fun and funk the product is intended for.</p>
+
+    *Some of the process images may be blurry due to loss of original files*
+</div>
+
+<img style="grid-column: 3/4;" class="fullImage" src="media/zoom/zoomFullImage.png" alt="Cassette Player instructional graphic">
+
+</div>
+
+<br>
+<img class="divider" src="media/decoration/divider-04.png" alt="Decorative stripes">
+<br><br>
+
+<div class="processWork">
+
+<!-- Code from https://stackoverflow.com/a/18676770/12381678 -->    
+<button class="pdfButton" type="submit" onclick="window.open('media/zoom/rightPlaceRightTime_process.pdf')"><p>Process Work & Index — PDF Version</p></button>
+
+<br><br>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#targetAudience" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Target Audience</h1>
+</button>
+
+<div class="processSection collapse" id="targetAudience">
+        <div class="processWords">
+            <p>My target audience is individuals who switched to remote work and using Zoom, or other video-calling software, during Covid-19. This specifies a demographic of employed people aged about 18 to 65 years. Given as these people are working adults, I can expect them to have a basic understanding of charts and graphs. This means that while I cannot make the charts complicated, they do not have to be overly simplified (eg. showing more than one dataset on the same chart using dual-axes will be understandable given visual clues such as color to help comprehension). 
+            <br><br>
+            Taking into consideration the purpose of the infographic (to inform about the pandemic being the major reason for Zoom’s popularity), the viewers do not need to see the specific numbers displayed on each data point on the graphs, just the general difference between points which can be seen using the y-axis. This is different than if the infographic was made for statisticians, who would need to be able to know the precise value of each data point. In order to accentuate data points I thought were important to viewers’ understanding, I took the values and displayed the numbers large outside the graph itself.</p>
+        </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#choosingATopic" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Choosing a Topic</h1>
+</button>
+<div class="processSection collapse" id="choosingATopic">
+    <div class="singleSections">
+        <div class="singleSection">
+            <div class="processWords">
+                <h3>Non Communicable Diseases Risk Factors</h3>
+                <p>My first topic focused on the different risk factors for non-communicable diseases and which risk factors were most prevalent in Canada’s population over time. Using the World Health Organization Databank I found a list of risk factors and various datasets for the prevalence of each one in Canada’s population. These risk factors are:</p>
+                <ul>
+                    <li>Blood Pressure</li>
+                    <li>Cholesterol</li>
+                    <li>Harmful use of alcohol</li>
+                    <li>Insufficient physical activity</li>
+                    <li>Obesity</li>
+                    <li>Tobacco use</li>
+                </ul>
+                <p>However after plotting all the datasets into different graphs I realized that because the data was measured in different units (average mL per week of alcohol, average time per day spent sedentary), I could not compare the datasets.</p>
+            </div>
+        </div>
+        <div class="singleSection">
+            <div class="processWords">
+                <h3>Death by Non Communicable Diseases by Year</h3>
+                <p>My second topic focused on the number of deaths in Canada each year that can be attributed to various non-communicable diseases. The diseases WHO had together in their dataset were malignant neoplasms (tumors), respiratory disease, cardiovascular disease, and Diabetes Mellitus. I plotted the dataset in Tableau, making a separate graph for each disease, and found that respiratory diseases and malignant neoplasms caused far more deaths than cardiovascular disease and Diabetes Mellitus.</p>
+            </div>
+        </div>
+    </div>
+    <div class="processImages">
+        <img class="processImgSingleBig" src="media/zoom/choosingATopic1.png" onclick="onClick(this)" style="margin-bottom: 2rem;" alt="4 graphs: Deaths Attributed to Cardiovascular Diseases, Per Year, Per Gender; Deaths Attributed to Respiratory Diseases, Per Year, Per Gender; Deaths Attributed to Diabetes Mellitus, Per Year, Per Gender; Deaths Attributed to Malignant Neoplasms, Per Year, Per Gender;">
+    </div>
+    <div class="processWords">
+        <h3>Death by Non-Communicable Disease by Year and by Gender</h3>
+        <p>In plotting the datasets for th deaths by non-communicable diseases I saw that I could sort the data by gender. In order to explore depth in my topic, I took a close look at the data through the lens of male deaths versus female deaths. I found that in 3 of the 4 diseases males had higher death rates than females, with the exception being cardiovascular disease in which female deaths were higher or equal per year.</p>
+    </div>
+    <div class="singleSections">
+        <div class="singleSection">
+            <h3>Why is the male death rate higher?</h3>
+            <p>From this analysis my idea to display the fact that male death rates for non-communicable diseases are generally higher than for females an to explore some of the reasons why this might be.
+            <br><br>
+            Some quick research gave me many reasons to explore and lots more ideas for datasets I could try to find. In general, men live shorter lives than women due to:</p>
+            <ul>
+                <li>Taking bigger risks</li>
+                <li>Having jobs that are more physically demanding</li>
+                <li>Being larger than women</li>
+                <li>Lacking social connection</li>
+                <li>Avoiding doctors</li>
+            </ul>
+            <p>I thought that each of these reasons would make an
+            interesting dataset comparing males versus females to
+            further illustrate my topic.</p>
+        </div>
+        <div class="singleSection">
+            <h3>Why do more females die of cardiovascular disease?</h3>
+            <p>The analysis of the deaths by non-communicable disease by year and gender also inspired a topic idea for exploring why females die more than males from cardiovascular diseases. In researching I learned that estrogen plays a role in protecting the heart, and once women enter menopause their estrogen levels drop, making cardiovascular disease a higher risk.</p>
+        </div>
+        <div class="singleSection">
+            <h3>Zoom vs Covid-19</h3>
+            <p>I was not happy enough with any of the narratives I could do with the non-communicable diseases data, so I moved on. Inspired by a slide in the week 9 presentation which showed an graph of the popularity of landline phones versus cell-phones over time, I began to think about what technology has become more popular over time, and landed on Zoom. I knew that I had never heard of Zoom before the pandemic, then all of a sudden it was everywhere; I was using it for every class and my parents were using it for most work meetings. I wanted to see if that was the case for everyone for just my specific situation. It turned out to be the case for everyone. Statistics from MacroTrends. net shows that between the first and second quarter of 2020 (right when the pandemic was declared,) Zoom’s revenue almost doubled. To add another layer to the topic, I decided to do more research into the human behavior that caused this, and found that the data curve for the number of people who died from Covid-19 very much matched the spike in Zoom’s revenue. I had decided on my topic.</p>
+        </div>
+        <div class="singleSection">
+            <img src="media/zoom/choosingATopic2.png" class="processImgSingleBig" onclick=onClick(this) alt="Table showing Zoom revenue in millions of USD from January 2020 to July 2023.">
+        </div>
+    </div>
+
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#graphAnalysis" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Analyzing Different Graphs Types</h1>
+</button>
+<div class="processSection collapse" id="graphAnalysis">
+    <div class="processWords">
+        <p>I chose dual-axis for most of the graphs because with both sets of data on the same axis the Sum of Covid deaths was almost imperceptible due to how much smaller the numbers are than the Sum of Zoom Revenue.</p>
+    </div>
+    <div class="singleSections">
+        <div class="singleSection">
+            <h3>Graph 1: Dual-Axis Line Graph</h3>
+            <p>This graph visualizes both datasets with lines. I believe this type of graph shows the changes over time very well and allows the viewer to really see the similarities in the curves of the data. However, with both graphs being line, I thought it made it a bit unclear that the datasets were of two different units and meant to be read on two separate axes.</p>
+            <img src="media/zoom/graphAnalysis1.png" class="processImgSingle" onclick=onClick(this) alt="Dual-axes line graph of Zoom Revenue vs Deaths from Covid-19">
+        </div>
+        <div class="singleSection">
+            <h3>Graph 2: Dual-Axis Column Graph</h3>
+            <p>This graph visualizes both datasets with columns. Similar to the Dual Axis Line Graph this format also does a good job of showing the similarities in the data curves. However, just as Graph 1, it is also slightly unclear that the datasets being compared are two different units and axes. Additionally, the columns themselves are displayed in front/behind of each other, making it seem like a stacked column chart. While this could be fixed in Illustrator, I believe the staggering of the columns would make the curve of the datasets look less similar, working against the narrative of the dataset.</p>
+            <img src="media/zoom/graphAnalysis2.png" class="processImgSingle" onclick=onClick(this) alt="Dual-axes stacked column graph of Zoom Revenue vs Deaths from Covid-19">
+        </div>
+        <div class="singleSection">
+            <h3>Graph 3: Dual-Axis Area Graph</h3>
+            <p>This graph visualizes both datasets with solid coloured areas. Same as the first two graphs, this format also showcases the similarity of the datasets curves well. However, I found that displaying the changes as a solid area makes it slightly harder to understand that the graph shows data over time; versus the Graph 2 in which the blocks of time are clearly distinguished from each other. Also similar to Graph 2, displaying the area in front/behind each other gives the idea that the chart is a stacked area, which if read as such would dramatically change the understanding.</p>
+            <img src="media/zoom/graphAnalysis3.png" class="processImgSingle" onclick=onClick(this) alt="Dual-axes area graph of Zoom Revenue vs Deaths from Covid-19">
+        </div>
+        <div class="singleSection">
+            <h3>Graph 4: Two Filled Radar Graphs</h3>
+            <p>This graph visualizes the data sets on two separate filled radar graphs. Despite knowing that radar graphs are not meant to display data over time. I very quickly realized that this type of graph would not work at all as trying to view the data points changing on a series of circular axes made it far too difficult to pick out any pattern in the data at all.</p>
+            <div class="processImages">
+                <img src="media/zoom/graphAnalysis4.png" class="processImgSS2" onclick=onClick(this) alt="Radar graph of Deaths from Covid-19">
+                <img src="media/zoom/graphAnalysis5.png" class="processImgSS2" onclick=onClick(this) alt="Radar graph of Zoom Revenue">
+            </div>
+        </div>
+    </div>
+    <div class="processWords">
+        <h3>Graph 5: Dual-Axis Line and Column Graph</h3>
+        <p>This graph visualizes data using a dual-axis graph with both line and columns. I found this combination of line and columns to solve the issues present in the previous types of graphs. Because the two variables are represented visually differently it is easier to see that they are not in fact the same unit and each belong to a different axis. Allowing the columns to be visually separated by space in between them, unlike the area graph, allows the the Quarters they represent to be easily distinguished. This paired with the line graphs ability to clearly show data changes over time worked best to convey my narrative.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/graphAnalysis6.png" class="processImgSingleBig" onclick=onClick(this) alt="Dual-axes line and column graph of Zoom Revenue vs Deaths from Covid-19">
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#formattingData" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Formatting Data</h1>
+</button>
+<div class="processSection collapse" id="formattingData">
+    <div class="singleSections">
+        <div class="singleSection">
+            <h3>Zoom Revenue Rate of Change Per Quarter</h3>
+            <p>Despite the dual-axis column and line graph clearly showing the connection between the spike in Zoom revenue and deaths from Covid-19, I felt that it was not clear enough just how big of a change Zoom went through. 
+            <br><br>
+            In order to make this more apparent, I made a table calculating the rate of change between quarters, and found that those numbers were much more shocking and effective. I averaged out the rate of change before Covid-19 and found it on average to be 17% increase, versus the 102% increase right when Covid-19 began. 
+            <br><br>
+            Next I formatted the table into some different types of charts in order to see which type conveyed the data most effectively.</p>
+            <br><br>
+            <h3>Line Graph vs Column Graph</h3>
+            <p>Looking at the two graphs side by side I had a hard time figuring out which type was more effective in displaying the sudden increase in revenue. 
+            <br><br>
+            While the line chart is certainly shocking with the tall, sharp point, I felt that it was harder to tell that the large spike incased two quarters instead of just one. I was also concerned that because in my main graph the Covid Deaths is displayed through line and the Zoom Revenue is displayed through columns that it might be confusing to show the same Zoom data in a line format.
+            <br><br>
+            I decided on the column chart, even though I thought it was slightly less effective in its shock factor.</p>
+        </div>
+        <div class="singleSection">
+            <img src="media/zoom/formattingData1.png" class="processImgSingle" onclick=onClick(this) style="margin-bottom: 1rem;" alt="Line graph of Zoom revenue rate of change per quarter">
+            <img src="media/zoom/formattingData2.png" class="processImgSingle" onclick=onClick(this) alt="Column graph of Zoom revenue rate of change per quarter">
+        </div>
+        <div class="singleSection">
+            <div class="processWords">
+                <h3>Zoom Business Customers vs Percentage of Workforce Remote</h3>
+                <p>Next was creating a chart of supporting data for my narrative. I used statistics from StatsCanada and searchlogistics.com to make a table comparing the amount of annual business customers Zoom has vs the percentage of the workforce that worked remotely per quarter. 
+                <br><br>
+                I began by plotting the two datasets on a dual-axis line chart, but found that despite the numbers in the table looking like they should be similar, the lines were very different. After checking my numbers to ensure they were correct, I tried the same technique that I did the Zoom Revenue Rate of Change Per Quarter graph and calculated the rate of change per quarter for each data set. This time the lines looked much more comparable.</p>
+            </div>
+        </div>
+        <div class="singleSection">
+            <img src="media/zoom/formattingData3.png" class="processImgSingle" onclick=onClick(this) style="margin-bottom: 1rem;" alt="Line graph of annual business customers Zoom has vs the percentage of the workforce that worked remotely per quarter.">
+            <img src="media/zoom/formattingData4.png" class="processImgSingle" onclick=onClick(this) alt="Line graph of rate of change per quarter for Zoom revenue and percentage of workforce remote.">
+        </div>
+        <div class="singleSection">
+            <div class="processWords">
+                <h3>Line Graph vs Line and Column Graph</h3>
+                <p>In deciding what type of graph to use for this supporting data I was originally going to use the same scheme as my main chart: columns for Zoom and line for Covid-19. However in formatting the data I found a few issues. Single-Axis Column and Line graph Dual-Axis Column and Line graph Dual-Axis Line graph. 
+                <br><br>
+                <em>Comparing the Data</em><br>
+                The first issue I found with having columns and line in this graph was that it downplayed the connection between the datasets. In the line graph I found it easier to see that both datasets spiked at the exact same time, versus the line and column in which the width of the bar offsets the timing. 
+                <br><br>
+                <em>Dual versus Single Axis</em><br>
+                In order to try and fix this I tried a dual-axis line and column. While this did make the connection in timing much more clear, changing the height of the tallest column to almost the exact same as the spiked line point, it also moved the negative part of the y-axis up as the Zoom data does not use it. This made it look like the Zoom columns started below the 0% line.
+                <br><br>
+                I ended up choosing a single-axis line graph, as I believe it shows the timing best and does not create any visual confusion with a below-0 dual-axis.</p>
+            </div>
+        </div>
+        <div class="singleSection">
+            <img src="media/zoom/formattingData5.png" class="processImgSingle" onclick=onClick(this) style="margin-bottom: 1rem;" alt="Single-axis line and column graph of rate of change per quarter for Zoom revenue and percentage of workforce remote.">
+            <img src="media/zoom/formattingData6.png" class="processImgSingle" onclick=onClick(this) style="margin-bottom: 1rem;" alt="Dual-axes line and column graph of rate of change per quarter for Zoom revenue and percentage of workforce remote.">
+            <img src="media/zoom/formattingData7.png" class="processImgSingle" onclick=onClick(this) alt="Single-axis line graph of rate of change per quarter for Zoom revenue and percentage of workforce remote.">
+        </div>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#layouts" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Layouts</h1>
+</button>
+<div class="processSection collapse" id="layouts">
+    <div class="processWords">
+        <h3>Horizontal Layouts</h3>
+        <p>I began with horizontal layouts as my graphs were all wider than they were taller, and I believed they might fit better. I experimented with different locations for my title and main graph, then placed the supporting graphs and paragraphs around them. However I quickly found that I was not happy with any of the layouts. They looked too squished and messy (also probably in part due to the large sizing of all the elements), and I did not feel like there was a clear direction for the eye to follow or hierarchy of which information was most important.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/layouts1.png" class="processImg2" onclick=onClick(this)>
+        <img src="media/zoom/layouts2.png" class="processImg2" onclick=onClick(this)>
+        <img src="media/zoom/layouts3.png" class="processImg2" onclick=onClick(this)>
+        <img src="media/zoom/layouts4.png" class="processImg2" onclick=onClick(this)>
+    </div>
+    <div class="processWords">
+        <h3>Vertical Layouts</h3>
+        <p>I immediately found that I preferred a vertical layout. I felt that i provided a clear direction of where to start, which in turn would allow me to place my content in the order I wanted it to be viewed. I experimented a bit with the the placement of the title once again, and decided that I liked having the title large with 1 work per line, leaving the other half of the top of the page open for a small paragraph introducing the data. I also decided to make my main graph take up the entire width of the page to make it the largest element as it is the most important.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/layouts5.png" class="processImg4" onclick=onClick(this)>
+        <img src="media/zoom/layouts6.png" class="processImg4" onclick=onClick(this)>
+        <img src="media/zoom/layouts7.png" class="processImg4" onclick=onClick(this)>
+        <img src="media/zoom/layouts8.png" class="processImg4" onclick=onClick(this)>
+        <img src="media/zoom/layouts9.png" class="processImg4" onclick=onClick(this)>
+        <img src="media/zoom/layouts10.png" class="processImg4" onclick=onClick(this)>
+        <img src="media/zoom/layouts11.png" class="processImg4" onclick=onClick(this)>
+    </div>
+    <div class="singleSections">
+        <div class="singleSection">
+            <h3>Cleaning it Up</h3>
+            <p>Once I had decided on a layout I created another art board and just mapped out the solid shapes of where I wanted each element to be. This way I could ensure that my spacing was correct and format my graphs to be the correct dimensions.</p>
+        </div>
+        <div class="singleSection">
+            <div class="processImages">
+                <img src="media/zoom/layouts12.png" class="processImgSS2" onclick=onClick(this) alt="Rough plan for infographic layout.">
+                <img src="media/zoom/layouts13.png" class="processImgSS2" onclick=onClick(this) alt="Boxes showing the plan of the layout">
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#text" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Text</h1>
+</button>
+<div class="processSection collapse" id="text">
+    <div class="processWords">
+        <h3>Main Paragraph</h3>
+        <p>I wanted to include a small amount of text in the infographic to provide some context for the data. I researched Zoom then wrote a small paragraph about its history and and rise to fame during the pandemic.
+        <br><br>
+        I was given feedback to make my paragraph a bit shorter, as the longer the paragraph is the less likely people are to read the whole thing.
+        </p>
+        <br>
+        <h3>Iterations of Main Paragraph</h3>
+        <p class="processImg3" style="opacity: 100%;">Changes in <em>red</em></p>
+    </div>
+    <div class="processImages">
+        <p class="processImg3" style="opacity: 100%;">Founded in 2011, Zoom <em>displayed</em> expected growth for <em>a video-call company</em> as video-calling became more and more popular over the years. However, in 2020 <em>when covid-19 hit the percentage of workers who worked remotely very quickly</em> doubled. This created a sudden demand for the ability to take meetings that would normally happen in-person in the workplace and make them digital. This is where Zoom stepped in. Already gaining popularity since <em>the company became open to the stock market in April</em> 2019, Zoom was at just the right place and the right time to be widely adopted as a new necessity for any company wanting to continue communication during the pandemic.</p>
+        <p class="processImg3" style="opacity: 100%;">Founded in 2011, <em>Zoom expected growth</em> as video-calling became more and more popular over the years. However, in 2020 during the span of two months when covid-19 hit the number of people working remotely doubled. <em>This created</em> a sudden demand for the ability <em>to take meetings that would normally happen in-person in the workplace and make them digital.</em> This is where Zoom stepped in. Already gaining popularity in the stock market in 2019, Zoom was at just the right place at the right time to be widely adopted as a new necessity for any company wanting to continue communication during the pandemic.</p>
+        <p class="processImg3" style="opacity: 100%;">Founded in 2011, Zoom grew slowly but steadily as video-calling became more popular. However, in the span of two months in 2020 after Covid-19 was declared a pandemic, the number of people working remotely doubled, hereby creating a sudden demand for the ability to communicate via video-call.
+        <br><br>
+        This is where Zoom stepped in. Already gaining popularity in the stock market in 2019, Zoom was at just the right place at the right time to be widely adopted as a new necessity for any company wanting to continue communication during the pandemic.</p>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#illustratingGraphs" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Illustrating the Graphs</h1>
+</button>
+<div class="processSection collapse" id="illustratingGraphs">
+    <div class="singleSections">
+        <div class="singleSection">
+            <div class="processWords">
+                <p>In order to have more control customizing elements of the graphs I traced over my graphs in Illustrator, sizing each one to the dimensions of the box it will be placed in on my layout map and making sure to leave room for titles, axes, and legends. I included only the columns, lines, and horizontal lines as I had not chosen a typeface yet so would add the text and numbers in later.
+                <br><br>
+                This stage allowed me to have more specific control over line width for both the data line and the horizontal lines, as well as the space between columns. 
+                <br><br>
+                I chose 8px for the width of the data line. I found that anything smaller was hard to see, but anything much larger was distracting from the columns.</p>
+            </div>
+        </div>
+        <div class="singleSection">
+            <div class="processImages">
+                <img src="media/zoom/ig1.png" class="processImgSingle" onclick=onClick(this) alt="Unlabelled Zoom Revenue Rate of Change Per Quarter column chart created in Illustrator">
+                <img src="media/zoom/ig2.png" class="processImgSingle" onclick=onClick(this) alt="Unlabelled Zoom Meeting Minutes and Percentage of Remote Workers chart created in Illustrator">
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#colourPallette" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Colour Pallette</h1>
+</button>
+<div class="processSection collapse" id="colourPallette">
+    <div class="processWords">
+        <p>Given as Zoom has a recognizable logo with a distinct color, I decided to base my color palette off of the Zoom blue. An issue I ran into with this is that the Zoom blue is extremely saturated, which made it hard to pair any other colors. To combat this, I turned the saturation down and darkened the color a little. So now while the blue was not exact, it was functional in the piece while still allowing the logo to be recognizable. Next I began pairing other colors to try and find my palette. In order to get a better idea of what the colors would actually look like on the piece, I tested my palette on the simple trace of the main graph.</p>
+        <br>
+        <h3>Orange and Blue</h3>
+        <p>The first palette I tried working with was my modified blue and a complimentary orange to the original blue. While I found this palette to work visually, I didn’t feel like it fit with my narrative. The orange was too cheerful and bright, reminding me of summer instead of Covid-19 and statistics. To combat this I tried changing the brightness and saturation of the cream orange background to be more dull, but I still found the colors to not fit with what I was looking for.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/colour1.png" class="processImg3" onclick=onClick(this) alt="Darker orange background, saturated blue columns, saturated orange line">
+        <img src="media/zoom/colour2.png" class="processImg3" onclick=onClick(this) alt="Lighter orange background, faded blue columns, saturated orange line">
+        <img src="media/zoom/colour3.png" class="processImg3" onclick=onClick(this) alt="Light blue background, faded blue columns, saturated orange line">
+    </div>
+    <div class="processWords">
+        <h3>Red and Blue</h3>
+        <p>While I was happy with my two modified light and dark blues, I needed the orange to change. Staying within the same area of the color spectrum I changed to red; a more suitable color to display statistics about deaths. I immediately thought this worked better. The red could be clearly seen against the lighter blue and the mood of the piece was less cheerful. 
+        <br><br>
+        With my palette chosen, I experimented with having a dark background instead of a light, but found it to be too distracting and take away from the graphs themselves.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/colour5.png" class="processImg3" onclick=onClick(this) alt="Light blue background, darker faded blue columns, red line">
+        <img src="media/zoom/colour8.png" class="processImg3" onclick=onClick(this) alt="Light orange background, lighter faded blue columns, red line">
+        <img src="media/zoom/colour9.png" class="processImg3" onclick=onClick(this) alt="Dark blue background, saturated blue columns, red line">
+        <img src="media/zoom/colour7.png" class="processImg3" onclick=onClick(this) alt="Light blue background, lighter faded blue columns, red line">
+        <img src="media/zoom/colour6.png" class="processImg3" onclick=onClick(this) alt="Light orange background, darker faded blue columns, red line">
+        <img src="media/zoom/colour10.png" class="processImg3" onclick=onClick(this) alt="Dark red background, faded blue columns, light blue line">
+    </div>
+
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#typeface" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Typeface</h1>
+</button>
+<div class="processSection collapse" id="typeface">
+    <div class="processWords">
+        <p>In order to get a better idea of how the typeface would look on the piece as a whole I tested different typefaces on the top section of the infographic with contained all the different hierarchy levels of text I would be using: main title, subtitle, and paragraph text.
+        <br><br>
+        I began by testing a simple Serif and Sans Serif. I found of the three broad categories, I liked the Serif and Sans Serif best. The Serif I felt was reminiscent of newspapers and provided an air of truth and reliability, like the information shown is factual. I liked the Sans Serif because it felt like it fit with the graphs and color palette I had chosen. The color palette is a bit more modern-day than would normally be seen in a newspaper, and the SansSerif fit with the geometric nature of the graphs.
+        <br><br>
+        Deciding to explore Sans Serif further, I chose another typeface and compared different font weights.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/typeface1.png" class="processImg3" onclick=onClick(this)>
+        <img src="media/zoom/typeface2.png" class="processImg3" onclick=onClick(this)>
+        <img src="media/zoom/typeface3.png" class="processImg3" onclick=onClick(this)>
+        <img src="media/zoom/typeface4.png" class="processImg3" onclick=onClick(this)>
+        <img src="media/zoom/typeface5.png" class="processImg3" onclick=onClick(this)>
+        <img src="media/zoom/typeface6.png" class="processImg3" onclick=onClick(this)>
+    </div>
+    <div class="singleSections">
+        <div class="singleSection">
+            <div class="processWords">
+                <h3>Zoom Typeface</h3>
+                <p>Still not completely happy with any Sans Serifs, I had the idea to look online and see what type face Zoom uses, that way the logo would fit in with the text on the infographic. On the <a href="https://devforum.zoom.us/t/whats-is-the-default-font-style-of-zoom/48802">Zoom Developer Forums</a> I found that Zoom uses the Google Font Lato, which is also available through Adobe. In order to check, I typed the word “zoom” in Lato and laid it over the Zoom logo, and found that it is in fact lato, just with some stylistically chosen rounded corners on characters.</p>
+            </div>
+        </div>
+        <div class="singleSection">
+            <div class="processWords">
+                <br>
+                <p class="lato">Lato Bold
+                <br>abcdefghijklmnopqrstuvwxyz
+                <br>ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                <br>0123456789</p>
+            </div>
+        </div>
+    </div>
+    <div class="processWords">
+        <p>I tested Lato on my work and found that I liked it. However, I still felt that the title looked too plain, especially while the Zoom logo was stylized. To fix this, I converted the title text to outlines and rounded some of the corners just as in the Zoom logo. I found that this added just enough style to add interest to the piece but not be distracting from the work.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/typeface7.png" class="processImg2" onclick=onClick(this) alt="Title in Lato typeface">
+        <img src="media/zoom/typeface8.png" class="processImg2" onclick=onClick(this) alt="Title in Lato typeface with stylistically rounded corners to match the Zoom logo">
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#colourDetails" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Colour Details</h1>
+</button>
+<div class="processSection collapse" id="colourDetails">
+    <div class="processWords">
+        <h3>Dark Blue and Light Blue</h3>
+        <p>Because I made the color of my columns the light blue so that the red could be seen better, I debated even including the darker blue. However, I found that only having the light blue made the piece seem too washed-out and the paragraph text too hard to read. I also tried changing all the blue to dark blue, getting rid of the light blue altogether, and combating the issue of the red not being able to be seen well by lightening it to stand out against the dark more. However I found this to make the red look too pink and change the overall mood of the graphs.
+        <br><br>
+        I ended up choosing the have the columns, axis titles, and x-axis labels in the lighter blue with titles and paragraph text in the darker blue. I considered making the axis-titles and x-axis labels in the darker blue so they could be seen better, but I thought it made them stand out too much compared to the data, and also added a layer of disconnect between them and the graphs. Having all related elements of the graphs the same color helps to distinguish that they belong together.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/cd1.png" class="processImg4" onclick=onClick(this)>
+        <img src="media/zoom/cd2.png" class="processImg4" onclick=onClick(this)>
+        <img src="media/zoom/cd3.png" class="processImg4" onclick=onClick(this)>
+        <img src="media/zoom/cd4.png" class="processImg4" onclick=onClick(this)>
+    </div>
+    <div class="singleSections">
+        <div class="singleSection">
+            <h3>Distinguishing Dual-Axes with Colour</h3>
+            <p>In order to help viewers distinguish which axis belonged to which dataset on the graph, the axis titles are in the same color as the dataset they represent. Red for Covid-19 deaths, and blue for Zoom revenue. This was a tip given to me during feedback.</p>
+            <img src="media/zoom/cd5.png" class="processImgSingle" onclick=onClick(this)>
+        </div>
+        <div class="singleSection">
+            <h3>Multi-colour Graph Titles</h3>
+            <p>As another way to help users distinguish the datasets on the main graph I tried changing the colors of the world in the title to match their respective datasets. However I found that this made the piece look too messy and disorganized, as well as added unnecessary confusion.</p>
+            <img src="media/zoom/cd6.png" class="processImgSingle" onclick=onClick(this)>
+        </div>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Details</h1>
+</button>
+<div class="processSection collapse" id="details">
+    <div class="processWords">
+            <h3>Shortening Y-Axis Markers</h3>
+            <p>Another tip given to me during in-class feedback was to remove all the trailing zeroes of the numbers on the y-axis. The numbers in the main graph are quite large, millions and billions, so displaying the full numbers just took up space and was confusing to viewers who had to count so many zeroes to figure out what numbers they were seeing. To fix this, I got rid of all the zeroes and added a subtitle to the axis titles that says “*in millions”. This way, the viewers have less mental work to do to determine what numbers are represented on the graph.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/details1.png" class="processImg2" onclick=onClick(this)>
+        <img src="media/zoom/details2.png" class="processImg2" onclick=onClick(this)>
+    </div>
+    <div class="processWords">
+        <h3>Sectioning Off Years</h3>
+        <p>Another detail I added to reduce the mental workload of views is ranges below the x-axis that section off the years. Without this detail, the viewer would have to look at the subtitle to determine what date the graph begins and count quarters from there to determine what year any specific data point is in.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/details3.png" class="processImg3" onclick=onClick(this)>
+        <img src="media/zoom/details4.png" class="processImg3" onclick=onClick(this)>
+        <img src="media/zoom/details5.png" class="processImg3" onclick=onClick(this)>
+    </div>
+    <div class="processWords">
+        <h3>Styling Graph Titles</h3>
+        <p>Given as the main title of the piece is stylized to match the Zoom logo, I also tried stylizing the titles of the graphs. However, as soon as I had finished rounding the corners on the title of the main graph and zoomed out to look at the piece as a whole, I realized that stylizing the graph titles was distracting and took away from the data itself; so I chose to keep the graph titles as they were in Lato Black.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/details6.png" class="processImg2" onclick=onClick(this)>
+        <img src="media/zoom/details7.png" class="processImg2" onclick=onClick(this)>
+    </div>
+    <div class="processWords">
+        <h3>Paragraph Alignment</h3>
+        <p>For the top section of the infographic which contained the title, subtitle, and introductory paragraph I wanted the elements to be cleanly sectioned off, without jagged lines that ran into each other. With the title already fairly rectangular with 1 word per line, that left deciding the right way to align the introductory paragraph. I found that justifying the paragraph worked best as it gave it the most rectangular shape with clean edges, versus left or right aligned which only created a clean edge on one side. The only issue I ran into with justifying the paragraph was that I had to tinker with the wording of the paragraph so there was not too much space between words on some lines.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/zoom/details9.png" class="processImg3" onclick=onClick(this)>
+        <img src="media/zoom/details10.png" class="processImg3" onclick=onClick(this)>
+        <img src="media/zoom/details11.png" class="processImg3" onclick=onClick(this)>
+    </div>
+    <div class="processWords">
+        <h3>Percentage Visual</h3>
+        <p>Deciding how the large numbered percentage visual was going to be formatted took a lot of tinkering and iterations.</p>
+    </div>
+    <div class="singleSections">
+        <div class="singleSection">
+            <em>Iteration 1</em>
+            <p>I first tried to format it the same way I had planned to in my chosen layout: with one large percent symbol and two numbers of varying sizes, the more important number being largest. However, I realized that I had used a different font in my layout planning, and the font I was using now, Lato, was not as tall, so did not take up the space I needed it to. I tried stretching the numbers (going in and adjusting the anchor points to keep the letters as un-stretched looking as possible,) but despite taking up the space I wanted them to they now did not fit in with the rest of the text in the piece and were too distracting.</p>
+            <img src="media/zoom/details13.png" class="processImgSingle" onclick=onClick(this)>
+        </div>
+        <div class="singleSection">
+            <em>Iteration 2</em>
+            <p>Next I tried moving the caption for the larger number to be below it and expanding the number to the height I wanted it now that it could take up the previous caption space. While this technically worked and got the numbers to the right sizes, I did not like that one caption was beside its number and the other below.</p>
+            <img src="media/zoom/details14.png" class="processImgSingle" onclick=onClick(this)>
+        </div>
+        <div class="singleSection">
+            <em>Iteration 3</em>
+            <p>Next I tried getting rid of the concept of the one big percent symbol and moving the captions to the space it would’ve been before. I ran into the same issue as before, however, in which the number that is supposed to be larger could not be expanded to its desired height and still fit within the width constraints.</p>
+            <img src="media/zoom/details15.png" class="processImgSingle" onclick=onClick(this)>
+        </div>
+        <div class="singleSection">
+            <em>Iteration 4</em>
+            <p>Next I tried compressing the percent symbols to be thinner in order to give the numbers more horizontal room. This, along with being more lenient about the amount of vertical space between the top and bottom number, worked well.</p>
+            <img src="media/zoom/details16.png" class="processImgSingle" onclick=onClick(this)>
+        </div>
+        <div class="singleSection">
+            <em>Iteration 5</em>
+            <p>Not happy with the way the numbers were misaligned in the previous iteration, I tried aligning them both left in order to create more of clean left edge. I found I liked this much better, and chose it for the final piece.</p>
+            <img src="media/zoom/details17.png" class="processImgSingle" onclick=onClick(this)>
+        </div>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#resizing" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Resizing</h1>
+</button>
+<div class="processSection collapse" id="resizing">
+    <div class="singleSections">
+        <div class="singleSection">
+            <p>At the very end of my process I scaled down the entire infographic to 94% and re-spaced the sections in order to make the whole thing less squished and messy. I found this allowed me to add more vertical spacing between the sections allowing for them to be distinguished from each other more easily.</p>
+        </div>
+        <img src="media/zoom/resizing1.png" class="processImg3" onclick=onClick(this)>
+        <img src="media/zoom/resizing2.png" class="processImg3" onclick=onClick(this)>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#referencesZoom" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>References</h1>
+</button>
+<div class="processSection collapse references" id="referencesZoom">
+    <div class="processWords" style="width: 90vw; padding-left: 36px; text-indent: -36px; line-height: 3rem;">
+        <p>Canzanese, Ray. “Remote Work Increasing Exponentially due to COVID-19.” Netskope, 16 Mar. 2020, <a href="https://www.netskope.com/blog/remote-work-increasing-exponentially-due-to-covid-19">www.netskope.com/blog/remote-work-increasing-exponentially-due-to-covid-19.</a></p>
+        <p>Coate, Patrick. “Remote Work Before, During, and after the Pandemic.” Www.ncci.com, 25 Jan. 2021, <a href="https://www.ncci.com/SecureDocuments/QEB/QEB_Q4_2020_RemoteWork.html">www.ncci.com/QEB_Q4_2020_RemoteWork</a></p>
+        <p>Curry, David. “Microsoft Teams Revenue and Usage Statistics (2020).” Business of Apps, 25 Aug. 2020, <a href="https://www.businessofapps.com/data/microsoft-teams-statistics/">www.businessofapps.com/data/microsoft-teams-statistics/.</a></p>
+        <p>Dean, Brian. “Zoom User Stats: How Many People Use Zoom in 2021?” Backlinko, 10 Mar. 2021, <a href="https://backlinko.com/zoom-users">backlinko.com/zoom-users.</a></p>
+        <p>Dziedzic, Łukasz. Lato, 2010, <a href="https://fonts.google.com/specimen/Lato">fonts.google.com/specimen/Lato.</a></p>
+        <p>Flynn, Jack. “25 Trending Remote Work Statistics [2023]: Facts, Trends, and Projections.” Zippia, 13 June 2023, <a href="https://www.zippia.com/advice/remote-work-statistics/#Remote_Work_Trends_and_Predictions">www.zippia.com/#Remote_Work_Trends_and_Predictions.</a></p>
+        <p>Government of Canada, Statistics Canada. “Working from Home during the COVID-19 Pandemic: How Rates in Canada and the United States Compare.” Www150.Statcan.gc.ca, 24 Aug. 2022, <a href="https://www150.statcan.gc.ca/n1/pub/36-28-0001/2022008/article/00001-eng.htm">www150.statcan.gc.ca/n1/pub/36-28-0001/2022008/article/00001-eng.htm.</a></p>
+        <p>“Working Most Hours from Home: New Estimates for January to April 2022.” Www150.Statcan.gc.ca, 17 July 2023, <a href="https://www150.statcan.gc.ca/n1/pub/11f0019m/11f0019m2023006-eng.htm">www150.statcan.gc.ca/n1/pub/11f0019m/11f0019m2023006-eng.htm.</a></p>
+        <p>Macro Trends. “Zoom Video Communications Revenue 2019-2023 | ZM.” Www.macrotrends.net, <a href="https://www.macrotrends.net/stocks/charts/ZM/zoom-video-communications/revenue#:~:text=Zoom%20Video%20Communications%20revenue%20for%20the%20twelve%20months%20ending%20July">www.macrotrends.net/zoom-video-communications.</a></p>
+        <p>Mayo, Alex. “Whats Is the Default Font Style of Zoom?” Zoom Developer Forum, 24 Apr. 2021, <a href="https://devforum.zoom.us/t/whats-is-the-default-font-style-of-zoom/48802">devforum.zoom.us/whats-is-the-default-font-style-of-zoom.</a></p>
+        <p>National Heart Lung and Blood Institute. “Coronary Heart Disease - Women and Heart Disease | NHLBI, NIH.” Www.nhlbi.nih.gov, 8 June 2023, <a href="https://www.nhlbi.nih.gov/health/coronary-heart-disease/women">www.nhlbi.nih.gov/health/coronary-heart-disease/women.</a></p>
+        <p>Search Logistics. “Zoom User Statistics: How Many People Use Zoom in 2023?” Www.searchlogistics.com, 12 Nov. 2021, <a href="https://www.searchlogistics.com/learn/statistics/zoom-user-statistics/#:~:text=Zoom%20had%2010%20million%20daily"></a>www.searchlogistics.com/zoom-user-statistics.</p>
+        <p>Statistica. “Coronavirus (COVID-19) Cumulative Cases by Day Worldwide 2020.” Statista, June 2023, <a href="https://www.statista.com/statistics/1103040/cumulative-coronavirus-covid19-cases-number-worldwide-by-day/">www.statista.com/cumulative-coronavirus-covid19-cases-number-worldwide-by-day/.</a></p>
+        <p>The Punctuation Guide. “En Dash | the Punctuation Guide.” Thepunctuationguide.com, TPG, 2010, <a href="https://www.thepunctuationguide.com/en-dash.html">www.thepunctuationguide.com/en-dash.html.</a></p>
+        <p>Tsao, Connie W., et al. “Heart Disease and Stroke Statistics—2022 Update: A Report from the American Heart Association.” Circulation, vol. 145, no. 8, 26 Jan. 2022, <a href="https://www.ahajournals.org/doi/10.1161/CIR.0000000000001052">www.ahajournals.org/doi/10.1161/CIR.0000000000001052</a>, https://doi.org/10.1161/cir.0000000000001052.</p>
+        <p>Wikipedia Contributors. “Zoom Video Communications.” Wikipedia, Wikimedia Foundation, 19 Oct. 2019, <a href="https://en.wikipedia.org/wiki/Zoom_Video_Communications">en.wikipedia.org/Zoom_Video_Communications.</a></p>
+        <p>World Health Organization. “Age-Standardized Estimates of Current Tobacco Use, Tobacco Smoking and Cigarette Smoking (Tobacco Control: Monitor).” Www.who.int, <a href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/gho-tobacco-control-monitor-current-tobaccouse-tobaccosmoking-cigarrettesmoking-agestd-tobagestdcurr"></a>www.who.int.</p>
+        <p>“Alcohol, Recorded per Capita (15+) Consumption (in Litres of Pure Alcohol).” Www.who.int, <a href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/alcohol-recorded-per-capita-(15-)-consumption-(in-litres-of-pure-alcohol)">www.who.int/data/alcohol-recorded-per-capita.</a></p>
+        <p>“Cardiovascular Diseases.” Www.who.int, <a href="https://www.who.int/health-topics/cardiovascular-diseases#tab=tab_3">www.who.int/cardiovascular-diseases.</a></p>
+        <p>“Insufficiently Active (Crude Estimate).” Www.who.int, <a href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/insufficiently-active-(crude-estimate)">www.who.int/data/insufficiently-active.</a></p>
+        <p>“Mean BMI (Kg/M2) (Age-Standardized Estimate).” Www.who.int, <a href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/mean-bmi-(kg-m-)-(age-standardized-estimate)">www.who.int/data/mean-bmi.</a></p>
+        <p>“Mean Non-HDL Cholesterol (Age-Standardized Estimate).” Www.who.int, <a href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/chol_05">www.who.int/data/chol_05.</a></p>
+        <p>“Noncommunicable Diseases: Risk Factors.” Www.who.int, <a href="https://www.who.int/data/gho/data/themes/topics/noncommunicable-diseases-risk-factors">www.who.int/data/noncommunicable-diseases-risk-factors.</a></p>
+        <p>“Number of Deaths Attributed to Non-Communicable Diseases, by Type of Disease and Sex.” Www.who.int, <a href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/number-of-deaths-attributed-to-non-communicable-diseases-by-type-of-disease-and-sex"></a>www.who.int/data/number-of-deaths-attributed-to-non-communicable-diseases-by-type-of-disease-and-sex.</p> 
+        <p>“Prevalence of Hypertension among Adults Aged 30-79 Years.” Www.who.int, <a href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/prevalence-of-hypertension-among-adults-aged-30-79-years">www.who.int/data/prevalence-of-hypertension-among-adults-aged-30-79-years.</a></p>
+        <p>Worldometer. “Coronavirus Graphs: Worldwide Cases and Deaths - Worldometer.” Www.worldometers.info, 2021, <a href="https://www.worldometers.info/coronavirus/worldwide-graphs/">www.worldometers.info/coronavirus/worldwide-graphs/.</a></p>
+    </div>
+</div>
+
+
+</div><!--process work end div-->
+
+<img class="divider" src="media/decoration/divider-04.png" alt="Decorative stripes">
+
+<footer>
+    <div>
+        <img src="media/decoration/linkedinIcon.svg">
+        <a href="https://www.linkedin.com/in/emma-murdock/">linkedin.com/in/emma-murdock</a>
+    </div>
+    <div>
+        <img src="media/decoration/emailIcon.svg">
+        <a href="mailto:murdocem@sheridancollege.ca">murdocem@sheridancollege.ca</a>
+    </div>
+    <br><br>
+</footer>
+
+
+<!-- Code for fullsize images on click from Sheridan College-->
+<div id="modal01" class="w3-modal" style="background-color:#121212; padding-top:0" onclick="this.style.display='none'">
+    <span class="xButton w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-center w3-transparent" style ="padding:20px">
+      <img id="img01" class="w3-image">
+      <br><br>
+      <p id="caption"></p>
+    </div>
+
+
+<script>
+
+    //Code for fullsize images on click from Sheridan College
+    function onClick(element) {
+      console.log("emma");
+      document.getElementById("img01").src = element.src;
+    
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    
+    }
+    </script>
+
+    <!-- Link to Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

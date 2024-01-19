@@ -1,0 +1,527 @@
+ /** General typeface styling **/
+ html {
+  scroll-behavior: smooth;
+ } 
+ body {
+    margin: 0;
+    background-color: #110E14;
+    width: 100%;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    color: #D6CCFF;
+  }
+  p, ul{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0px;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+  h1{
+    font-family: "bitcount-prop-single-circle", sans-serif;
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 2.8rem;
+  }
+  h3 {
+    font-family: "bitcount-prop-single-circle", sans-serif;
+    font-size: 2.2rem;
+    color: #D6CCFF;
+    font-weight: bolder;
+  }
+  a {
+    text-decoration: none;
+    color:#D6CCFF;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  em {
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 1.6rem;
+    text-decoration: underline;
+  }
+  .xButton {
+    color:#D6CCFF; 
+    padding: 0rem 2rem;
+  }
+
+  .xButton:hover {
+    color: grey
+  }
+
+  /** Nav styling   **/
+  @keyframes navAni {
+    from {height: 0px;}
+    to {height: 3.5rem}
+  }
+
+  #menuIcon {
+    display: none;
+    margin: 0.5rem auto;
+    width: 3rem;
+  }
+  #menuIcon:hover {
+    opacity: 50%;
+  }
+  #menuIcon:focus{
+    box-shadow: none;
+  }
+  #nav{
+    width: 60vw;
+    height: 3.5rem;
+    margin: 1.5rem auto 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    animation-name: navAni;
+    animation-duration: 0.5s;
+  }
+  #nav a:hover{
+    text-decoration: none;
+  }
+  .navOpt{
+    color: #110E14;
+    width: 8rem;
+    height: 2.3rem;
+    text-align: center;
+    border-radius: 3rem;
+    margin: 0.5rem;
+    border: 2.5px #D6CCFF solid;
+    color: #D6CCFF;
+  }
+  .navOpt:hover {
+    background-color: #D6CCFF;
+    color: #110E14;
+  }
+  footer{
+    padding: 1rem 0rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    column-gap: 2rem;
+  }
+  footer a:hover, #education a:hover{
+    color: #8f60a6;
+  }
+
+
+  /** Emma Murdock logo image **/
+  #emma{
+    width: 100%;
+  }
+
+  /** class for the divider lines **/
+  .divider{
+    width: 100vw;
+  }
+
+
+  /** Styling the colors of the titles, summaries, and thumbnails of my works **/
+  #works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    width: 90%;
+    margin: 3rem auto;
+  }
+  .workOpt {
+    width: 33rem;
+  }
+  #works img{
+    width: 33rem;
+  }
+  #works a {
+    text-decoration: none;
+  }
+  #works a:active {
+    filter: brightness(200%);
+  }
+
+  /**styling for the flip boxes from https://codepen.io/shailaO07/pen/mdeOwgv**/
+  .flip-box {
+    background-color: transparent;
+    width: 33rem;
+    height: 33rem;
+  }
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    border: 6px dotted #D6CCFF;
+  }
+  .flip-box-front,
+  .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-box-front {
+    color: black;
+  }
+  .flip-box-back {
+    padding: 1rem 2rem;
+    background-color: #110E14;
+    color: #D6CCFF;
+    transform: rotateY(180deg);
+  }
+  
+  .workTitle {
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  /** general styling for process work pages **/
+  .intro {
+    width: 90vw;
+    margin: auto;
+  }
+  .processWork {
+    width: 90vw;
+    margin: auto;
+  }
+  .fullImage {
+    margin: 1rem 0rem;
+    width: 100%;
+  }
+  .pdfButton {
+    border-radius: 5rem;
+    color: #D6CCFF;
+    border: 2px #D6CCFF solid;
+    background-color: #110E14;
+    padding: 0rem 3rem;
+  }
+  .pdfButton:hover, .pdfButton:hover a {
+    cursor: pointer;
+    color: #110E14;
+    border: 2px #D6CCFF solid;
+    background-color: #D6CCFF;
+    text-decoration: none;
+  }
+  .pdfButton:active {
+    padding: 0rem 2.8rem;
+  }
+
+  .collapseButton {
+    display: flex;
+    column-gap: 1rem;
+    background-color:#110E14;
+    border: none;
+    color:#D6CCFF;
+  }
+  .collapseButton:focus{
+    box-shadow: none;
+  }
+  .collapseButton:active{
+    opacity: 0.8;
+  }
+
+  .showHideButton {
+    display: flex;
+    column-gap: 2rem;
+    margin: 1rem 0rem;
+    cursor: pointer;
+  }
+  .showHideButton:hover {
+    opacity: 30%;
+    display: flex;
+    column-gap: 2rem;
+  }
+  .showHideStar {
+    margin: 0.5rem 0rem;
+    width: 3.5rem;
+  }
+  .processSection {
+    margin: 1rem 0px 1rem 0px;
+  }
+
+  /** styling the images/words layout based on how many images are included **/
+  .singleSections {
+    margin: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+  }
+  .singleSection {
+    width: 43vw;
+    margin: 1rem 0rem;
+  }
+  .processWordsSingle {
+    margin: 0px 0px 20px 0px;
+  }
+  .processImgSingle {
+    border-radius: 10px;
+    max-width: 40vw;
+    justify-self: center;
+  }
+  .processImgSingleBig {
+    border-radius: 10px;
+    max-width: 90vw;
+    justify-self: center;
+  }
+  .processImgSingle:hover, .processImg2:hover, .processImg3:hover, .processImgSingleBig:hover, .collapseButton:hover, .processImgSS2:hover {
+    opacity: 65%;
+    cursor: pointer;
+  }
+  .processWords {
+    margin: 0px 0px 20px 0px;
+  }
+  .processImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .processImg2 {
+    border-radius: 10px;
+    max-width: 43.5vw;
+    height: 100%;
+  }
+  .processImg3 {
+    border-radius: 10px;
+    max-width: 28vw;
+    height: 100%;
+  }
+  .processImg4 {
+    border-radius: 10px;
+    max-width: 24vw;
+    height: 100%;
+  }
+  .processImgSS2 {
+    border-radius: 10px;
+    max-width: 21vw;
+    height: 100%;
+  }
+  .references p {
+    margin: 1rem 0rem;
+  }
+  .references a {
+    color: #8f60a6;
+  }
+  .processImg3 em {
+    color: #CC6666;
+    text-decoration: line-through;
+    font-weight: 500;
+  }
+  .lato {
+    font-family: 'Lato', sans-serif;
+    font-size: 3.1rem;
+    line-height: 5rem;
+  }
+
+  /**Styling for About Me page**/
+  #amIntro, #amPhil, #education, #experience, #skills, #hobbies {
+    width: 90%;
+    margin: 1rem auto 4rem auto;
+  }
+  #amIntro, #amPhil, #skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #introImg, #philStars {
+    width: 30%;
+  }
+  #introImg img, #philStars img {
+    width: 100%;
+  }
+  #introText, #philText {
+    width: 66%;
+  }
+  #philStars{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  #philStars > * {
+    margin: auto;
+  }
+  .indent {
+    margin-left: 3rem;
+  }
+  #education, #experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 3rem;
+  }
+  .edContent, .exContent {
+    grid-column: 1/6;
+  }
+  .edDate, .exDate {
+    grid-column: 6/7;
+  }
+  em i {
+    font-weight: 500;
+  }
+  #hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+  }
+  #hobbiesText{
+    width: 60%;
+  }
+  #hobbiesImgs{
+    width: 35%;
+  }
+  #sciFi {
+    display: flex;
+    justify-content: space-between;
+  }
+  #tng, #ds9 {
+    width: 47%;
+  }
+
+/** styling for progress bars **/
+
+
+.progress-bar {
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem;
+  border-radius: 50%;   
+  }
+#htmlSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 75%, #4f4a65 0); 
+}
+#cssSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 75%, #4f4a65 0); 
+}
+#jsSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 35%, #4f4a65 0); 
+}
+#adobeSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 80%, #4f4a65 0); 
+}
+#figmaSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 75%, #4f4a65 0); 
+}
+#modellingSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 10%, #80799c 10%, #80799c 65%, #4f4a65 0); 
+}
+#wdSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 75%, #4f4a65 0); 
+}
+#gdSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 65%, #4f4a65 0); 
+}
+#physSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 55%, #4f4a65 0); 
+}
+#protoSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 70%, #4f4a65 0); 
+}
+
+ /** re-styling for different screen widths **/
+ 
+ @media only screen and (max-width: 1020px) {
+    #nav {
+      display: none;
+    }
+    #menuIcon {
+      display: block;
+    }
+ }
+ @media screen and (min-width: 1020px){
+  #nav {
+    display: flex!important;
+  }
+}
+
+  @media only screen and (max-width: 850px) {
+    #works {
+      width: 90vw;
+      grid-template-columns: 1fr;
+      row-gap: 0.5rem;
+      justify-content: center;
+    }
+    .titleSummary {
+      width: 100%;
+      grid-column: 1/3;
+    }
+    .workImg {
+      grid-column: 1/3;
+    }
+    #works img {
+      border-radius: 10px;
+      width: 100%;
+    }
+    .singleSection {
+      width: 90vw;
+    }
+    .processImgSingle {
+      border-radius: 10px;
+      max-width: 90vw;
+      justify-self: center;
+    }
+    .processImgSS2{
+      max-width: 43vw;
+    }
+    .processImg4{
+      max-width: 43vw;
+    }
+    #philText, #hobbiesText, #hobbiesImgs { 
+      width: 100% 
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    #introImg {
+      margin: auto;
+      width: 60%;
+    }
+    #introText { 
+      width: 100% 
+    }
+    #philStars {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    #introImg {
+      width: 90%;
+    }
+    #introText { 
+      width: 100% 
+    }
+  }

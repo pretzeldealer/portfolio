@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+
+<!--link to Bootstrap js-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!--link to Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PTSans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/qfr8gdz.css">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+
+<div id="menuIcon" onClick="navShowHide()">
+    <img src="media/decoration/menu.svg">
+</div>
+
+ <nav id="nav">
+    <a href="work.html"><div class="navOpt" id="work">Work</div></a>
+    <a href="index.html"><div class="navOpt" id="home">Home</div></a>
+    <a href="aboutMe.html"><div class="navOpt" id="aboutMe">About Me</div></a>
+</nav>
+
+
+<div class="intro">
+
+<h1 class="workTitle">Cassette Player Instructional Graphic</h1>
+
+<p>A combination of written instructions, labels, and visual graphics, this graphic informs a user on the anatomy of the Philips Stereo/Radio Cassette Player and how to use its cassette player function. Pulling on inspiration from the product’s era, the illustrations and overall graphic are stylized to convey the sense of fun and funk the product is intended for.</p>
+
+<img class="fullImage" src="media/cassette/cassetteFullImage.png" alt="Cassette Player instructional graphic">
+
+</div>
+
+<br>
+<img class="divider" src="media/decoration/divider-04.png" alt="Decorative stripes">
+<br><br>
+
+<div class="processWork">
+
+<!-- Code from https://stackoverflow.com/a/18676770/12381678 -->    
+<button class="pdfButton" type="submit" onclick="window.open('media/cassette/cassetteProcess.pdf')"><p>Process Work & Index — PDF Version</p></button>
+
+<br><br>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#choosingAnObject" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Choosing an Object</h1>
+</button>
+
+<div class="processSection collapse" id="choosingAnObject">
+<div class="multiSection">
+    <div class="processWords">
+        <h3>Pen and Mechanical Pencil</h3>
+        <p>My first ideas for objects were a pen and a mechanical pencil. I thought these objects would work well because they are well known, can be taken apart and put back together easily, and have a good amount of simple parts to label. However, once I began thinking about writing instructions for these objects I realized there were not enough steps and the steps themselves were too simple.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/cassette/pen2.JPG" class="processImg2" onclick="onClick(this)" alt="A pen disassembled to show all the pieces">
+        <img src="media/cassette/pencil2.JPG" class="processImg2" onclick="onClick(this)" alt="A mechanical pencil disassembled to show all the pieces">
+    </div>
+</div>
+
+<div class="singleSections">
+    <div class="singleSection">
+    <div class="processWordsSingle">
+        <h3>Sewing Machine</h3>
+        <p>My next idea was a sewing machine, as I have good knowledge of how it works and has more steps than a pen or mechanical pencil. However once I quickly realized that there were far too many complicated steps and pieces to label.</p>
+    </div>
+        <img src="media/cassette/sew.JPG" class="processImgSingle" onclick="onClick(this)" alt="A sewing machine">
+    </div>
+    <div class="singleSection">
+        <div class="processWordsSingle">
+            <h3>Cassette Player</h3>
+            <p>I also thought of a cassette player as it doesn’t have too many parts and is not too complicated to use. My only concern was that in order for the cassette player to work, it needs a cassette tape; making my project technically about two objects instead of one.</p>
+        </div>
+                <img src="media/cassette/player.JPG" class="processImgSingle" onclick="onClick(this)" alt="A cassette player">
+    </div>
+    <div class="singleSection">
+        <div class="processWordsSingle">
+            <h3>Cassette Tape</h3>
+            <p>To go with the cassette player, next I went over the labels and steps that I would have to add to incorporate the cassette tape along with the player. This added many more labels which I thought may make my product too busy and complicated.</p>
+        </div>
+                <img src="media/cassette/casette.JPG" class="processImgSingle" onclick="onClick(this)" alt="A cassette tape">
+    </div>
+</div>
+
+<div class="multiSection">
+    <div class="processWords">
+        <h3>Feedback</h3>
+        <p>After showing my labelling and instructions of the various objects I chose, I received feedback in-class that the cassette player is the best option, and that the cassette tape does not need to be included in the full diagram to be labelled, just simply shown in the steps.</p>
+        <br>
+        <h3>Reducing Complication</h3>
+        <p>My next step was deciding which function of the cassette player I was going to show. The player has both the capability to player cassette tapes and to play the radio. This would mean including two sets of instructions for the object; This, coupled with the fact that I was going to have to show multiple viewpoints of the cassette player, I thought would be too much information to show. I decided to only show the instructions for the cassette player function as it is the primary function of the object.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/cassette/player2.JPG" class="processImg2" onclick="onClick(this)">
+        <img src="media/cassette/player3.JPG" class="processImg2" onclick="onClick(this)">
+    </div>
+</div>
+    
+
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#writingInstructions" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Writing Instructions</h1>
+</button>
+
+<div class="processSection collapse" id="writingInstructions">
+<div class="multiSection">
+    <div class="processWords">
+        <p>I first wrote out the instructions while I was still deciding which object to choose so I ended up making instructions for both the cassette tape and the radio function. After I decided to focus only on the cassette function I went back and refined the cassette player steps and deleted the radio function steps.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/cassette/cassetteSteps.png" class="processImg2" onclick="onClick(this)" alt="Cassette Steps<br>1. Open cassette player<br>2. Place cassette tape inside withopen side facing down.">
+        <img src="media/cassette/radioSteps.png" class="processImg2" onclick="onClick(this)">
+    </div>
+    <br>
+    <div class="processWords">
+        <h3>Refining Instructions</h3>
+        <p>My original cassette instructions only had 4 very simple steps that did not include the majority of the pieces I wanted to label, making having them labelled sort of redundant. So I added a few more steps, both making the instructions more encompassing and including more of the labelled pieces.</p>
+    </div>
+    <div class="processImages">
+        <img src="media/cassette/finalSteps.png" class="processImg2" onclick="onClick(this)">
+    </div>
+</div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#creatingIllustrations" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Illustrations</h1>
+</button>
+
+<div class="processSection collapse" id="creatingIllustrations">
+    <div class="multiSection">
+        <div class="processWords">
+            <h3>Realistic Illustrations</h3>
+            <p>I began by trying to make Illustrator illustrations that depicted the cassette player as realistically as possible, including light and shadow and not including solid line around pieces and the object as a whole.
+            <br><br>
+            However, after many attempts and iterations using several different approaches, I found that while I was able to get my illustrations looking fairly realistic, I was not happy with the way they looked stylistically.</p>
+        </div>
+        <div class="processImages">
+            <img src="media/cassette/realCassette1.png" class="processImg2" onclick="onClick(this)">
+            <img src="media/cassette/realCassette2.png" class="processImg2" onclick="onClick(this)">
+        </div>
+        <br>
+        <div class="processWords">
+            <h3>Research</h3>
+            <p>In order to find inspiration for the style I researched product illustrations from the same time period the cassette player is from. Specifically, I looked at instruction manual illustrations from the same brand: Philips.
+            <br><br>
+            I found that the illustrations were mostly just line illustrations, with the few color illustrations I found sticking to mostly flat greys, with the occasional bright color to highlight important aspects. As my cassette player is mostly greys with only as mall amount of blue and orange, I found this style to be appropriate.</p>
+        </div>
+        <div class="processImages">
+            <img src="media/cassette/diagram1.png" class="processImg3" onclick="onClick(this)">
+            <img src="media/cassette/diagram2.png" class="processImg3" onclick="onClick(this)">
+            <img src="media/cassette/diagram3.png" class="processImg3" onclick="onClick(this)">
+        </div>
+        <div class="processWords">
+            <h3>Stylizing</h3>
+            <p>With a new style in mind, I created illustrations of the front, top, and side of my cassette player in full flat colour. I then made several variations of these illustrations in different grey scales and with and without line.
+            </p>
+            <div class="processImages">
+                <img src="media/cassette/greyLine.png" class="processImg3" onclick="onClick(this)">
+                <img src="media/cassette/darkGreyNoLine.png" class="processImg3" onclick="onClick(this)">
+                <img src="media/cassette/whiteLine.png" class="processImg3" onclick="onClick(this)">
+                <img src="media/cassette/lightGreyLine.png" class="processImg3" onclick="onClick(this)">
+                <img src="media/cassette/greyNoLine.png" class="processImg3" onclick="onClick(this)">
+                <img src="media/cassette/colorNoLine.png" class="processImg3" onclick="onClick(this)">
+            </div>
+            <br>
+            <p>With a new style in mind, I created illustrations of the front, top, and side of my cassette player in full flat colour. I then made several variations of these illustrations in different grey scales and with and without line.</p>
+        </div>
+        <div class="processImages">
+            <img src="media/cassette/chosenIllustration.png" class="processImg2" onclick="onClick(this)">
+            <img src="media/cassette/chosenIllustration2.png" class="processImg2" onclick="onClick(this)">
+        </div>
+        <br>
+        <div class="processWords">
+            <h3>Instructional Illustrations</h3>
+            <p>Next was creating illustrations foreach step in the instructions. Since most of the steps feature pieces on the side of the cassette player I was able to keep a consistent image of the side view in 4 of the 5 steps. In keeping with the Small Multiples principle, this makes the instructions easier to understand.</p>
+        </div>
+        <div class="processImages">
+            <img src="media/cassette/steps.png" class="processImgSingleBig" onclick="onClick(this)">
+        </div>
+</div>
+
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#typefaces" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Typefaces</h1>
+</button>
+
+<div class="processSection collapse" id="typefaces">
+    <div class="multiSection">
+        <div class="processWords">
+            <h3>Main Text — Azo Sans Regular</h3>
+            <p>For the title I wanted to find a display typeface, something so stylized that it could only possibly be readable in small portions, like a title. I noticed that lots of design from the 80’s/90’s time period the cassette player is from uses large, blocky, capital letters, so I found a variety of typefaces that fit the criteria, and put them on my different background color.</p>
+            <br><br>
+            <h3>Title Text — Gyparody Bold</h3>
+            <p>I knew that my graphic was going to use at least two different typefaces: one for the title, and one for all the main text. I knew I wanted to have a very simple sans-serif typeface for the main text as I felt that it would fit the sort of funky and geometric design style of the era the cassette player is from. Luckily, the cassette player itself features sans-serif type, so I was able to find a typeface that closely matched the one already used.</p>
+        </div>
+        <div class="processImages">
+            <img src="media/cassette/fontOptions.png" class="processImg2" onclick="onClick(this)">
+            <img src="media/cassette/fontChoices.png" class="processImg2" onclick="onClick(this)">
+        </div>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#layouts" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Layouts</h1>
+</button>
+
+<div class="processSection collapse" id="layouts">
+    <div class="singleSections">
+        <div class="singleSection">
+        <div class="processWordsSingle">
+            <h3>Layout 1</h3>
+            <p>I began by laying out the main illustrations. I put the side illustration on the right side of the front view, and the top view above it in order to simulate the real structure of the cassette player. With this layout of the main illustrations, I found that there was only room for the instructional illustrations in a vertical format. I liked this layout, it seemed unique and created left and right sectioning in the graphic, instead of the usual top and bottom sectioning. However, I found that I was not happy with the positioning of the title.</p>
+        </div>
+            <img src="media/cassette/layout1.png" class="processImgSingle" onclick="onClick(this)">
+        </div>
+        <div class="singleSection">
+            <div class="processWordsSingle">
+                <h3>Layout 2</h3>
+                <p>The next layout I tried arranged the instructional illustrations horizontally. This did not leave enough vertical remaining space for the main illustrations to be arranged according to the physical structure of the object, so I rotated the top view illustration and placed it on the other side of the font view. I found that while this layout was functional, it did not evoke the same “fun” feeling that the asymmetry of the first layout did.</p>
+            </div>
+                <img src="media/cassette/layout2.png" class="processImgSingle" onclick="onClick(this)">
+            </div>
+    </div>
+    <br>
+    <div class="multiSection">
+        <div class="processWords">
+            <h3>Feedback</h3>
+            <p>In-class feedback suggested I change the title from being right aligned to left aligned, and move it the center of the page to emphasize the horizontal line the rough edge of the title creates. This made the overall look less messy and sectioned off the instructional illustrations better.</p>
+        </div>
+        <div class="processImages">
+            <img src="media/cassette/layout1.png" class="processImg2" onclick="onClick(this)">
+            <img src="media/cassette/finalLayout.png" class="processImg2" onclick="onClick(this)">
+        </div>
+        <br>
+        <div class="singleSections">
+            <div class="singleSection">
+                <div class="processWords">
+                    <h3>Instructional Illustration Alignment</h3>
+                    <p>Next I had to find the correct way to align the illustrations. This proved to be a bit of a challenge due to the protruding pieces of the illustrations, such as the arrows and headphone wire.
+                    <br><br>
+                    I tried both aligning the illustrations by their left-most edge and by the center of the cassette player. I found that aligning them by the center of the cassette player worked with the principle of Small Multiples to keep the illustrations consistent and as simple as possible.</p>
+                </div>
+            </div>
+            <div class="singleSection">
+                <div class="processImages">
+                    <img src="media/cassette/leftAligned.png" class="processImg2" onclick="onClick(this)">
+                    <img src="media/cassette/centerAligned.png" class="processImg2" onclick="onClick(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#labelling" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Labelling</h1>
+</button>
+
+<div class="processSection collapse" id="labelling">
+    <div class="multiSection">
+        <div class="processWords">
+            <p>Given the layout of my graphic, the area that the labels could be were limited. The labels for the front view could only be below it, the labels for the side graphic to the right of it, and the labels for the top view below it.
+            <br><br>
+            With these areas established I then just had to find spacing for the lines so that they could be perfectly vertical or horizontal and touch the piece they label.
+            <br><br>
+            I decided to go with all vertical or horizontal lines instead of diagonal. Though I thought diagonal lines would bring movement and a “fun” aspect, I also felt that they would make the graphic seem messier.</p>
+            <br>
+            <h3>Feedback</h3>
+            <p>In class I asked for feedback on the one label I was having trouble with: the Prog Button label. I had two possible options for where the line and label could be placed (shown in red in image) but was unsure of which one to choose. The bent line made the labels less squished, however it was also the only bent line of all the labels, making it out of place. Feedback suggested that the bent line was better as it allowed more room for the other labels.</p>
+        </div>
+        <div class="processImages">
+            <img src="media/cassette/labelling3.png" class="processImg3" onclick="onClick(this)">
+            <img src="media/cassette/labelling2.png" class="processImg3" onclick="onClick(this)">
+            <img src="media/cassette/labelling1.png" class="processImg3" onclick="onClick(this)">
+        </div>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#colours" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Colours</h1>
+</button>
+
+<div class="processSection collapse" id="colours">
+    <div class="multiSection">
+        <div class="processWords">
+            <p>Next I created a series of canvases with different background colours and put the front illustration on it in order to see which color might work best. I picked colours that were already used in the illustration, such as: the orange in the “Dynamic Bass Boost” text, the grey of the outside, the blues of the front panel, and the dark teal of the screen.
+            <br><br>
+            While I was still going to have to test colors on the full layout to get a better idea of what they would look like on the final graphic, from this preliminary test I was able to see that I didn’t like the way the greys and darker colors looked with the colours of the illustration.</p>
+        </div>
+        <div class="processImages">
+            <img src="media/cassette/colorPallette.png" class="processImgSingleBig" onclick="onClick(this)">
+        </div>
+        <br>
+        <div class="processWords">
+            <h3>Background Colour</h3>
+            <p>To choose the main background I made several copies of the layout with a different main color on each one. I found that I liked orange best as it gave the graphic a more “fun” feel and a look more consistent with the 80’s and 90’s time period the cassette player is from.
+            <br><br>
+            I also tried having more than one background color, but I found that it added too much noise to the graphic, taking away from the actual illustrations and instructions. I decided that having one main colors as the background, with any sectioning being done using variations on the brightness, would work best.</p>
+        </div>
+        <div class="processImages">
+            <img src="media/cassette/color1.png" class="processImg3" onclick="onClick(this)">
+            <img src="media/cassette/color2.png" class="processImg3" onclick="onClick(this)">
+            <img src="media/cassette/color3.png" class="processImg3" onclick="onClick(this)">
+            <img src="media/cassette/color4.png" class="processImg3" onclick="onClick(this)">
+            <img src="media/cassette/color5.png" class="processImg3" onclick="onClick(this)">
+            <img src="media/cassette/color6.png" class="processImg3" onclick="onClick(this)">
+        </div>
+        <br>
+        <div class="singleSections">
+            <div class="singleSection">
+                <div class="processWords">
+                    <h3>Accessories Color</h3>
+                    <p>I chose to make the “extras” in the instructional illustrations (the cassette tape and the headphone wire) the same blue as seen on the front of the cassette player. I felt this added harmony to the graphic as it carried the blue color throughout the more of the piece, instead of the blue only appearing once.</p>
+                </div>
+            </div>
+            <div class="singleSection">
+                <div class="processImages">
+                    <img src="media/cassette/acc1.png" class="processImg2" onclick="onClick(this)">
+                    <img src="media/cassette/acc2.png" class="processImg2" onclick="onClick(this)">
+                </div>
+            </div>
+        </div>
+        <div class="processWords">
+            <h3>Instructional Illustration Arrows and Labels</h3>
+            <p>I chose white arrows over orange, blue, and black because I felt the graphic overall was too dark, and needed more light. For this same reason I made the text of the labels white as well, as orange or black only darkened the overall look. While the label text is white, I chose to make the label lines orange, as white lines were not very visible on the grey of the cassette player.</p>
+        </div>
+        <div class="processImages">
+            <img src="media/cassette/arrow.png" class="processImg2" onclick="onClick(this)">
+            <img src="media/cassette/labels.png" class="processImg2" onclick="onClick(this)">
+        </div>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>Details</h1>
+</button>
+
+<div class="processSection collapse" id="details">
+    <div class="singleSections">
+        <div class="singleSection">
+        <div class="processWordsSingle">
+            <h3>Stripes</h3>
+            <p>In order to keep with the time the cassette player is from, I chose to incorporate a stripe motif reminiscent of product posters and advertisements of similar products from the era. I decorated the left and right edges with stripes to frame the graphic.</p>
+        </div>
+            <img src="media/cassette/reference.jpg" class="processImgSingle" onclick="onClick(this)">
+        </div>
+        <div class="singleSection">
+            <div class="processWordsSingle">
+                <h3>Drop Shadow</h3>
+                <p>In order to add more “pop” to the title and stylize it more, I added a drop shadow the same color as the instruction section. This was bright enough to be seen, but not too bright making it distracting.</p>
+            </div>
+                    <img src="media/cassette/title.png" class="processImgSingle" onclick="onClick(this)">
+        </div>
+        <div class="singleSection">
+            <div class="processWordsSingle">
+                <h3>Instruction Container</h3>
+                <p>I chose to put the instructions on a separate color in order to distinguish them from the main illustration. In keeping with the stripe motif of the design, I wanted to extend the container the full vertical length of the page, however I felt that made the section look too separated from the main graphic.</p>
+            </div>
+                    <img src="media/cassette/container.png" class="processImgSingle" onclick="onClick(this)">
+        </div>
+    </div>
+</div>
+
+<button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#referencesCassette" aria-expanded="false" aria-controls="collapseExample">
+    <img class="showHideStar" src="media/decoration/star.svg">
+    <h1>References</h1>
+</button>
+
+<div class="processSection collapse references" id="referencesCassette">
+    <div class="processWords" style="width: 90vw; padding-left: 36px; text-indent: -36px; line-height: 3rem;">
+        <p>Arbeu, Rui. Azo Sans, <a href="https://fonts.adobe.com/fonts/azo-sans">fonts.adobe.com/fonts/azo-sans#fonts-section.</a></p>
+        <p>Larabie, Ray. Gyparody, <a href="https://fonts.adobe.com/fonts/gyparody">fonts.adobe.com/fonts/Gyparody.</a></p>
+        <p>Manuals Lib. “Installation; Checking the Power Supply; Taking out the Transit Screws; Sitting the Player - Philips CD 100 Manual [Page 3].” Manualslib, <a href="https://www.manualslib.com/manual/340643/Philips-Cd-100.html?page=3#manual">www.manualslib.com/manual/340643/Philips-Cd-100.html?page=3#manual</a>.</p>
+        <p>“Philips as 9510 Owner’s Manual (Page 7 of 13) | ManualsLib.” Manualslib, <a href="https://www.manualslib.com/manual/775958/Philips-As-9510.html?page=7#manua">www.manualslib.com/manual/775958/PhilipsAs-9510.html?page=7#manual</a>.</p>
+        <p>“PHILIPS VR838/05 OPERATING MANUAL Pdf Download.” Manualslib, <a href="https://www.manualslib.com/manual/176659/Philips-Vr838-05.html#product-VR838/02">www.manualslib.com/manual/176659/PhilipsVr838-05.html#product-VR838/02</a>.</p>
+        <p>Manuals Online. “Philips Cassette Player AQ 6681/14 User Guide.” Manualsonline.com,<a href="http://audio.manualsonline.com/manuals/mfg/philips/philips_cassette_player_product_list.html">audio.manualsonline.com/manuals/mfg/philips/philips_cassette_player_product_list.html</a>.</p>
+        <p>Mejia, Ronnie. “Work 2019 — Ronnie Mejia - Graphic Designer - Ronniemejia.ca.”<a href="https://ronniemejia.ca/Work-2019">ronniemejia.ca/Work-2019</a>.</p>
+        <p>“Philips CD100 CD Player | CDM-0 | Classic | Cdplayer.” Www.vintagechief.com, <a href="https://www.vintagechief.com/philips-cd300-cd-player-21119">www.vintagechief.com/philips-cd100-cdplayer-20872</a>.</p>
+        <p>Sorene, Paul. “Blank VHS Cassette Packaging Design Trends: A Lost Art.” Flashbak, 18 June 2018,<a href="https://flashbak.com/blank-vhs-cassette-packaging-design-trends-art-402545/">flashbak.com/blank-vhscassette-packaging-design-trends-art-402545/</a>.</p>
+        <p>warakami-vaporwave. “VHS Black Rainbow,” Tumblr.com , 14 Dec. 2019, <a href="https://warakami-vaporwave.tumblr.com/post/189673539741/vhs-black-rainbow-follow-me-on-instagram">warakami-vaporwave.tumblr.com/post/189673539741/vhs-black-rainbow-follow-me-on-instagram</a>.</p>
+    </div>
+</div>
+
+</div> <!--process work end div-->
+
+
+<img class="divider" src="media/decoration/divider-04.png" alt="Decorative stripes">
+
+<footer>
+    <div>
+        <img src="media/decoration/linkedinIcon.svg">
+        <a href="https://www.linkedin.com/in/emma-murdock/">linkedin.com/in/emma-murdock</a>
+    </div>
+    <div>
+        <img src="media/decoration/emailIcon.svg">
+        <a href="mailto:murdocem@sheridancollege.ca">murdocem@sheridancollege.ca</a>
+    </div>
+    <br><br>
+</footer>
+
+
+<!-- Code for full size images on click from Sheridan College-->
+<div id="modal01" class="w3-modal" style="background-color:#121212; padding-top:0" onclick="this.style.display='none'">
+    <span class="xButton w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-center w3-transparent" style ="padding:20px">
+      <img id="img01" class="w3-image">
+      <br><br>
+      <p id="caption"></p>
+    </div>
+
+
+<script>
+
+    //Code for full size images on click from Sheridan College
+    function onClick(element) {
+      console.log("emma");
+      document.getElementById("img01").src = element.src;
+    
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    
+    }
+    </script>
+
+    <!-- Link to Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

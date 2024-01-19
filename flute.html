@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+
+<!--link to Bootstrap js-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!--link to Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PTSans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/qfr8gdz.css">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+
+<div id="menuIcon" onClick="navShowHide()">
+    <img src="media/decoration/menu.svg">
+</div>
+
+ <nav id="nav">
+    <a href="work.html"><div class="navOpt" id="work">Work</div></a>
+    <a href="index.html"><div class="navOpt" id="home">Home</div></a>
+    <a href="aboutMe.html"><div class="navOpt" id="aboutMe">About Me</div></a>
+</nav>
+
+
+<div class="intro">
+
+<h1 class="workTitle">Interactive Flute Educational Web App</h1>
+
+<p>Using Teachable Machine to to identify audio input, this interactive web app allows a user to input a note they wish to play, then uses audio input to identify if the note the user plays is correct. If not correct, the note they are currently playing is identified and the instructions for playing the correct one are displayed.</p>
+<br>
+
+<button class="pdfButton" type="submit" href="media/flute/fluteProjectCode/Module 2 Final/mmbProject2/index.html" style="justify-content:center">
+    <a href="media/flute/fluteProjectCode/Module 2 Final/mmbProject2/index.html">
+        <p>Link to functional web app</p>
+    </a>
+</button>
+
+</div>
+
+<br>
+<img class="divider" src="media/decoration/divider-04.png" alt="Decorative stripes">
+<br><br>
+
+<div class="processWork">
+
+<!-- Code from https://stackoverflow.com/a/18676770/12381678 -->    
+<button class="pdfButton" type="submit" onclick="window.open('media/flute/fluteProcess.pdf')"><p>Process Work & Index — PDF Version</p></button>
+
+<br><br>
+
+    <button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#designStatement" aria-expanded="false" aria-controls="collapseExample">
+        <img class="showHideStar" src="media/decoration/star.svg">
+        <h1>Design Statement</h1>
+    </button>
+    <div class="collapse processSection" id="designStatement">
+            <div class="processWords">
+            <p>This project is the culmination of explorations into technology that processes, edits, and creates sounds and voices, such as P5.js, P5.Sound, Teachable Machine, and chat bots. The result is a web app that is able to guide a user through learning to play the flute by listening to and correcting the notes they play in cojunction with related visuals.</p>
+            </div>
+    </div>
+
+    <button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#initialExplorations" aria-expanded="false" aria-controls="collapseExample">
+        <img class="showHideStar" src="media/decoration/star.svg">
+        <h1>Initial Explorations</h1>
+    </button>
+    <div class="processSection collapse" id="initialExplorations">
+        <div class="singleSections">
+            <div class="singleSection">
+                <div class="processWords">
+                    <p>To begin I walked around campus listening for intersting sounds to record. When I was finished I listened to them all again and uploaded them to the web template. While this week did not produce any ideas that inspired my final product, collecting and listening to the sounds did teach me about what type of sounds record well, and how different file formats affect how the sound is played, something which I used in my final.
+                        <br><br>
+                    For my final, I had to make sure I had a quiet space to record and that the microphone on my computer would pick up the sounds I wanted to make and be sensitive enough to not garble them.</p>
+                </div>
+            </div>
+            <div class="singleSection">
+                <div class="processImages">
+                    <img src="media/flute/explorationsInRecording.png" class="processImgSingle" onclick="onClick(this)" alt="Screenshot of P5.sound audio players labelled by the sound they play.">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#p5sound" aria-expanded="false" aria-controls="collapseExample">
+        <img class="showHideStar" src="media/decoration/star.svg">
+        <h1>P5.Sound</h1>
+    </button>
+    <div class="processSection collapse" id="p5sound">
+        <div class="processWords">
+            <p>This week I explored P5.Sound’s capabilities and learned how to manipulate it to do what I wanted. While my iterations were simple, they helped me gain the skill I needed to complete my final.</p>
+        </div>
+
+        <div class="singleSections">
+            <div class="singleSection">
+                <div class="processWordsSingle">
+                    <h3>Volume Changer</h3>
+                    <p>This iteration plays and pauses a sound file using a button click, changing the volume level through input that isn’t a slider, like the majority of my iterations. This allowed me to experiment with converting user input such as text to values that P5.Sound could use for controls such as volume.</p>
+                </div>
+                <img src="media/flute/p5sound2.png" class="processImgSingle" onclick="onClick(this)" alt="P5.sound iteration including a button to stop/start audio and a text input box to change the volume">
+            </div>
+            <div class="singleSection">
+                <div class="processWordsSingle">
+                    <h3>Oscillator</h3>
+                    <p>This iteration creates a sound using an oscillator, changing the frequency, and therefore the pitch, with a slider. This made me begin to think about the frequency of the oscillator in terms of music, and if I could match certain frequencies to notes in order to play music.
+                        <br><br>
+                    I used this concept in my final, in which buttons can be clicked to play change the frequency of the oscillator to create a desired note.</p>
+                </div>
+                <img src="media/flute/p5sound.png" class="processImgSingle" onclick="onClick(this)" alt="P5.sound iteration including a play/pause button, volume slider, speed slider, and 4 buttons to change the oscillator to 'sine', 'triangle', 'sawtooth', and 'square'.">
+            </div>
+        </div>
+    </div>
+
+    <button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#tmAndChatbot" aria-expanded="false" aria-controls="collapseExample">
+        <img class="showHideStar" src="media/decoration/star.svg">
+        <h1>Teachable Machine and Chatbot</h1>
+    </button>
+    <div class="processSection collapse" id="tmAndChatbot">
+        <div class="singleSections">
+            <div class="singleSection">
+                <div class="processWords">
+                    <p>In these iterations I tested the Teachable Machine to see if it could differentiate between notes play on the flute. When I found out it could, I went further an used my idea from Week 6, adding buttons for the A and Bb notes that played an oscillator at the same frequency of the note. I wanted to make an iteration that allowed the user to select a note, then tell them if they are playing it correctly or not, but the code what too complicated for the time I had.</p>
+                </div>
+            </div>
+            <div class="singleSection">
+                <div class="processImages">
+                    <img src="media/flute/tmAndChatbot1.png" class="processImgSingle" onclick="onClick(this)" alt="A P5.sound iteration with two buttons labelled 'A' and 'B' that play an A note on flute and a Bb note on flute.">
+                </div>
+            </div>
+            <div class="singleSection">
+                <div class="processWords">
+                    <h3>Star Trek TNG Control Panel</h3>
+                    <p>Using Speech to Text, Text to Speech, and Chatbot, I made a version of the LCARS control panels from Star Trek The Next Generation that verbally and visually prompted users to state their name and rank, then said and displayed the phrase "Welcome to the USS Enterprise 1701-D [rank] [name].</p>
+                </div>
+                <div class="processImages">
+                    <img src="media/flute/tmAndChatbot2.png" class="processImgSingle" onclick="onClick(this)" alt="An LCARS screen from Star Trek The Next Generation with the words 'Please state your name and rank'">
+                </div>
+            </div>
+            <div class="singleSection">
+                <div class="processWords">
+                    <h3>Written Letter</h3>
+                    <p>Using Speech to text I experimented with styling P5 in order to make the users speech displayed as handwritten letters.</p>
+                </div>
+                <div class="processImages">
+                    <img src="media/flute/tmAndChatbot3.png" class="processImgSingle" onclick="onClick(this)" alt="Two pieces of paper. One with the words 'Say hello' and 'sincerely, Chat Bot'">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#concept" aria-expanded="false" aria-controls="collapseExample">
+        <img class="showHideStar" src="media/decoration/star.svg">
+        <h1>Project Concept</h1>
+    </button>
+    <div class="processSection collapse" id="concept">
+        <div class="singleSections">
+            <div class="singleSection">
+                <div class="processWords">
+                    <p>I decided to take my idea with oscillator generated notes, and the music note iterations with the Teachable Machine and bring them together for the final.
+                    <br><br>
+                    I knew what I wanted the project to do functionality wise, but after in-class feedback, realised I also needed to think about how the visual aspect and design will enhance the project.
+                    <br><br>
+                    I decided to mimic the look of sheet music and music instructional books, including a staff and a treble clef that will show notes to tell the user which note they are currently playing and if it matches the one they wanted to play. In order to make the look more authentic, I used a paper textured background and the same font, EB Garamond, that is used in sheet music.</p>
+                </div>
+            </div>
+            <div class="singleSection">
+                <div class="processImages">
+                    <img src="media/flute/concept.png" class="processImgSingle" onclick="onClick(this)" alt="A hand drawn concept for the final project.">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="collapseButton btn" type="button" data-toggle="collapse" data-target="#references" aria-expanded="false" aria-controls="collapseExample">
+        <img class="showHideStar" src="media/decoration/star.svg">
+        <h1>References</h1>
+    </button>
+    <div class="processSection collapse references" id="references">
+        <div class="processWords" style="width: 90vw; padding-left: 36px; text-indent:-36px; line-height: 3rem;">
+            <p>Duffner, Georg, and Octavio Pardo. EB Garamond, <a href="https://fonts.google.com/specimen/EB+Garamond">fonts.google.com/specimen/EB+Garamond</a>.</p>
+            <p>kiwihug. “Black and White Abstract Painting Photo,” Unsplash, 26 Aug. 2021, <a href="https://unsplash.com/photos/black-and-white-abstract-painting-cqhXfrRHCPo">unsplash.com/photos/cqhXfrRHCPo</a>.</p>
+             <p>Michigan Technological University. “Frequencies of Musical Notes.” Mtu.edu, 2019, <a href="https://pages.mtu.edu/~suits/notefreqs.html">pages.mtu.edu/~suits/notefreqs.html.</a></p>
+             <p>piliapp. Music Flat Sign, <a href="https://www.piliapp.com/symbol/music/">www.piliapp.com/symbol/music/.</a></p>
+            <p>Treble Clef Transparent PNG. <a href="https://www.stickpng.com/img/miscellaneous/music-symbols/treble-clef">www.stickpng.com/img/miscellaneous/music-symbols/treble-clef.</a></p>
+        </div>
+    </div>
+
+</div>
+
+
+<img class="divider" src="media/decoration/divider-04.png" alt="Decorative stripes">
+
+<footer>
+    <div>
+        <img src="media/decoration/linkedinIcon.svg">
+        <a href="https://www.linkedin.com/in/emma-murdock/">linkedin.com/in/emma-murdock</a>
+    </div>
+    <div>
+        <img src="media/decoration/emailIcon.svg">
+        <a href="mailto:murdocem@sheridancollege.ca">murdocem@sheridancollege.ca</a>
+    </div>
+    <br><br>
+</footer>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal" style="background-color:#121212; padding-top:0" onclick="this.style.display='none'">
+    <span class="xButton w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-center w3-transparent" style ="padding:20px">
+      <img id="img01" class="w3-image">
+      <br><br>
+      <p id="caption"></p>
+    </div>
+    
+<script>
+
+    // Modal Image Gallery
+    function onClick(element) {
+        console.log("emma");
+      document.getElementById("img01").src = element.src;
+    
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    
+      // var captionUrl = document.getElementById("urLink");
+      // captionUrl.innerHTML = element.url;
+    
+      //document.getElementById("urLink").src = element.url;
+    }
+    </script>
+
+    <!-- Link to Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
