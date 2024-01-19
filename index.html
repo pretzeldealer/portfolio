@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PTSans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/qfr8gdz.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body onLoad="scrollFunc()">
+
+<div id="menuIcon" onClick="navShowHide()">
+    <img src="media/decoration/menu.svg">
+</div>
+
+<nav id="nav">
+    <a href="work.html"><div class="navOpt" id="work">Work</div></a>
+    <a href="index.html"><div class="navOpt" id="home">Home</div></a>
+    <a href="aboutMe.html"><div class="navOpt" id="aboutMe">About Me</div></a>
+</nav>
+
+
+<img id="emma" src="media/finalFinalBg.gif" alt="Emma Murdock UX Designer, Creative Thinker, and Learning Enthusiast">
+
+<footer>
+    <div>
+        <img src="media/decoration/linkedinIcon.svg">
+        <a href="https://www.linkedin.com/in/emma-murdock/">linkedin.com/in/emma-murdock</a>
+    </div>
+    <div>
+        <img src="media/decoration/emailIcon.svg">
+        <a href="mailto:murdocem@sheridancollege.ca">murdocem@sheridancollege.ca</a>
+    </div>
+    <br><br>
+</footer>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal" style="background-color:#110E14; padding-top:0" onclick="this.style.display='none'">
+    <span class="xButton w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-center w3-transparent" style ="padding:20px">
+      <img id="img01" class="w3-image">
+      <br><br>
+      <p id="caption"></p>
+    </div>
+
+<script>
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+    
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
+
+
+</body>
+</html>
