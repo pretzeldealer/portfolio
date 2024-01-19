@@ -471,18 +471,18 @@
     #nav{
       width: 60vw;
       height: 6.5rem;
-      margin: 1.5rem auto 0rem;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      font-size: 1.4rem;
+      font-size: 1rem;
       animation-name: navAni;
       animation-duration: 0.5s;
     }
     @keyframes navAni {
       from {height: 0px;}
       to {height: 6.5rem;}
+    }
+    .navOpt{
+      width: 6rem;
+      height: 2rem;
+      margin: 0.3rem;
     }
     footer {
       width: 50vw;
@@ -595,15 +595,10 @@
   }
 
   @media only screen and (max-width: 650px) {
-   #nav{
+    #nav{
       width: 60vw;
       height: 8.5rem;
       margin: 1.5rem auto 0rem;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      font-size: 1.4rem;
       animation-name: navAni;
       animation-duration: 0.5s;
     }
@@ -616,6 +611,16 @@
     }
     #introText { 
       width: 100% 
+    }
+    h1 {
+      font-size: 2.2rem;
+    }
+    h2, p {
+      font-size: 0.8rem;
+      line-height: 1.6rem;
+    }
+    h3 {
+      font-size: 1rem;
     }
     
   }
