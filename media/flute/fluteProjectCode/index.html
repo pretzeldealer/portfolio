@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet"  href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.2/dist/ml5.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+  <div id="popUp">
+    In order for the web app to function, the browser needs access to your device microphone. Please click "Allow".
+    <br><br>
+    Select the note you want to play and follow the chart below the staff for directions on how to place your fingers on the flute. The app will then listen through the microphone for the note that you are playing, and display it on the staff. 
+    <br><br>
+    If the note is <em>red</em> you are playing the wrong note.<br><br>
+    If the note is <i>green</i> you are playing the correct note.
+    <br><br>
+    <button onclick="closePop()">X</button>
+  </div>
+
+  <script src="final.js"></script>
+
+  <div id="container">
+    <div id="instructions"><h1>Select the note you want to play:</h1></div>
+
+    <!--Flat and Sharp symbols from https://html-css-js.com/html/character-codes/-->
+    <!--Radio button styling from https://www.sliderrevolution.com/resources/styling-radio-buttons/-->
+  
+    <div id="radios">
+      <label for="Ab" class="material-icons">
+        <input type="radio" name="mode" id="Ab" value="Ab" checked/>
+        <span>A♭</span>
+      </label>    
+
+      <label for="A" class="material-icons">
+        <input type="radio" name="mode" id="A" value="A" />
+        <span>A</span>
+      </label>
+
+      <label for="Bb" class="material-icons">
+        <input type="radio" name="mode" id="Bb" value="Bb" />
+        <span>B♭</span>
+      </label>
+
+      <label for="B" class="material-icons">
+        <input type="radio" name="mode" id="B" value="B" />
+        <span>B</span>
+      </label>
+
+      <label for="C" class="material-icons">
+        <input type="radio" name="mode" id="C" value="C" />
+        <span>C</span>
+      </label>
+
+      <label for="C#" class="material-icons">
+        <input type="radio" name="mode" id="C#" value="C#" />
+        <span>C♯</span>
+      </label>
+
+      <label for="D" class="material-icons">
+        <input type="radio" name="mode" id="D" value="D" />
+        <span>D</span>
+      </label>
+
+      <label for="Eb" class="material-icons">
+        <input type="radio" name="mode" id="Eb" value="Eb" />
+        <span>E♭</span>
+      </label>
+
+      <label for="E" class="material-icons">
+        <input type="radio" name="mode" id="E" value="E" />
+        <span>E</span>
+      </label>
+
+      <label for="F" class="material-icons">
+        <input type="radio" name="mode" id="F" value="F" />
+        <span>F</span>
+      </label>
+
+      <label for="F#" class="material-icons">
+        <input type="radio" name="mode" id="F#" value="F#" />
+        <span>F#</span>
+      </label>
+
+      <label for="G" class="material-icons">
+        <input type="radio" name="mode" id="G" value="G" />
+        <span>G</span>
+      </label>
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>
