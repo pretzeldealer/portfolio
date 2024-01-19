@@ -595,6 +595,22 @@
   }
 
   @media only screen and (max-width: 650px) {
+   #nav{
+      width: 60vw;
+      height: 8.5rem;
+      margin: 1.5rem auto 0rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      font-size: 1.4rem;
+      animation-name: navAni;
+      animation-duration: 0.5s;
+    }
+    @keyframes navAni {
+      from {height: 0px;}
+      to {height: 8.5rem;}
+    }
     #introImg {
       width: 90%;
     }
