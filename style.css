@@ -628,5 +628,7 @@
       margin: 1rem;
       border-radius: 50%;   
   }
+   .progress-bar p{
+    font-size: 0.8rem;
     
   }
