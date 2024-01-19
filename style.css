@@ -554,8 +554,8 @@
     }
     .flip-box {
       background-color: transparent;
-      width: 24rem;
-      height: 24rem;
+      width: 20rem;
+      height: 20rem;
     }
     .flip-box-inner {
       position: relative;
@@ -590,7 +590,7 @@
       margin: 0.6rem 0rem 0rem 0rem;
     }
     .workOpt h1{
-      width: 24rem;
+      width: 20rem;
     }
   }
 
@@ -613,10 +613,10 @@
       width: 100% 
     }
     h1 {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
     h2, p {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       line-height: 1.6rem;
     }
     h3 {
