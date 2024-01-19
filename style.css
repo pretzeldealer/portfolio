@@ -615,7 +615,7 @@
     h1 {
       font-size: 1.8rem;
     }
-    h2, p {
+    h2, p, em, ul, li {
       font-size: 1rem;
       line-height: 1.6rem;
     }
