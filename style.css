@@ -428,7 +428,7 @@
 #modellingSkill{
   background: 
   radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
-  conic-gradient(#D6CCFF 130%, #80799c 30%, #80799c 65%, #4f4a65 0); 
+  conic-gradient(#D6CCFF 30%, #80799c 30%, #80799c 65%, #4f4a65 0); 
 }
 #wdSkill{
   background: 
