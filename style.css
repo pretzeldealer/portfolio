@@ -425,6 +425,11 @@
   radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
   conic-gradient(#D6CCFF 75%, #4f4a65 0); 
 }
+#excelSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 65%, #4f4a65 0); 
+}
 #modellingSkill{
   background: 
   radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
@@ -439,6 +444,11 @@
   background: 
   radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
   conic-gradient(#D6CCFF 65%, #4f4a65 0); 
+}
+#dataSkill{
+  background: 
+  radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
+  conic-gradient(#D6CCFF 75%, #4f4a65 0); 
 }
 #physSkill{
   background: 
