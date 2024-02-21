@@ -21,9 +21,9 @@
     font-size: 3rem;
   }
   h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: left;
-    line-height: 2.8rem;
+    line-height: 2rem;
   }
   h3 {
     font-family: "bitcount-prop-single-circle", sans-serif;
@@ -133,10 +133,10 @@
     margin: 3rem auto;
   }
   .workOpt {
-    width: 33rem;
+    width: 26rem;
   }
   #works img{
-    width: 33rem;
+    width: 26rem;
   }
   #works a {
     text-decoration: none;
@@ -148,8 +148,8 @@
   /**styling for the flip boxes from https://codepen.io/shailaO07/pen/mdeOwgv**/
   .flip-box {
     background-color: transparent;
-    width: 33rem;
-    height: 33rem;
+    width: 26rem;
+    height: 26rem;
   }
   .flip-box-inner {
     position: relative;
@@ -161,7 +161,7 @@
   }
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
-    border: 6px dotted #D6CCFF;
+    border: 5px dotted #D6CCFF;
   }
   .flip-box-front,
   .flip-box-back {
