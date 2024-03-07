@@ -9,7 +9,7 @@ function testScroll() {
 function scrollFunc() {
        console.log("emma")
        window.scroll(0, 130);
-       setTimeout(testScroll, 4000)
+       setTimeout(testScroll, 3500)
 }
 
 function navShowHide() {
