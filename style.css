@@ -117,6 +117,12 @@
   #emma{
     width: 100%;
   }
+  #myVideo {
+    position:relative;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+  }
 
   /** class for the divider lines **/
   .divider{
