@@ -64,7 +64,7 @@
   #menuIcon {
     display: none;
     margin: 0.5rem auto;
-    width: 3vw;
+    width: 5rem;
   }
   #menuIcon:hover {
     opacity: 50%;
