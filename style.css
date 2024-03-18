@@ -231,17 +231,21 @@
   .collapseButton:focus, .littleCollapse:focus{
     box-shadow: none;
   }
-  .collapseButton:active, .collapseButton:hover, .littleCollapse:active, .littleCollapse:hover{
+  .collapseButton:active, .collapseButton:hover{
     opacity: 0.6;
   }
-
   .littleCollapse{
     display: flex;
-    background-color:#D6CCFF;
-    border: none;
+    background-color:#8f60a6;
+    border: #8f60a6 2px solid;
     color:#110E14;
-    height: 2.7rem;
-    padding: 0rem 1rem;
+    height: 2.3rem;
+    padding: 0.2rem 1rem;
+  }
+  .littleCollapse:active, .littleCollapse:hover{
+    background-color:#110E14;
+    border: #8f60a6 2px solid;
+    color:#8f60a6;
   }
 
   .showHideButton {
@@ -342,10 +346,11 @@
   }
 
   /**Styling for About Me page**/
-  #amIntro, #amPhil, #education, #experience, #skills, #hobbies {
+  #amIntro, #amPhil, #education, #experience, #hobbies, #skills {
     width: 90%;
     margin: 1rem auto 4rem auto;
   }
+
   #amIntro, #amPhil, #skills {
     display: flex;
     flex-wrap: wrap;
@@ -427,7 +432,7 @@
 #jsSkill{
   background: 
   radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
-  conic-gradient(#D6CCFF 35%, #4f4a65 0); 
+  conic-gradient(#D6CCFF 45%, #4f4a65 0); 
 }
 #adobeSkill{
   background: 
@@ -442,7 +447,7 @@
 #modellingSkill{
   background: 
   radial-gradient(closest-side, #110E14 59%, transparent 60% 100%),
-  conic-gradient(#D6CCFF 40%, #80799c 40%, #80799c 65%, #4f4a65 0); 
+  conic-gradient(#D6CCFF 60%, #80799c 60%, #80799c 75%, #4f4a65 0); 
 }
 #wdSkill{
   background: 
@@ -477,7 +482,7 @@
 
  /** re-styling for different screen widths **/
  
- @media only screen and (max-width: 1020px) {
+ /* @media only screen and (max-width: 1020px) {
     #nav {
       display: none;
     }
@@ -489,10 +494,11 @@
   #nav {
     display: flex!important;
   }
-}
+} */
+
 
   @media only screen and (max-width: 850px) {
-    #nav{
+    /* #nav{
       width: 60vw;
       height: 6.5rem;
       font-size: 1rem;
@@ -502,9 +508,14 @@
     @keyframes navAni {
       from {height: 0px;}
       to {height: 6.5rem;}
+    } */
+    #nav {
+      width: 80vw;
+      height: 3rem;
+      font-size: 1.2rem;
     }
     .navOpt{
-      width: 6rem;
+      width: 7rem;
       height: 2rem;
       margin: 0.3rem;
     }
@@ -555,14 +566,6 @@
     #philText, #hobbiesText, #hobbiesImgs { 
       width: 100% 
     }
-  .littleCollapse{
-    display: flex;
-    background-color:#D6CCFF;
-    border: none;
-    color:#110E14;
-    height: 2rem;
-    padding: 0.2rem 1rem;
-  }
   }
 
   @media only screen and (max-width: 750px) {
@@ -570,7 +573,7 @@
       font-size: 2.0rem;
     }
     h2, p {
-      font-size: 1rem;
+      font-size: 1.4rem;
       line-height: 2rem;
     }
     h3 {
@@ -633,7 +636,7 @@
   }
 
   @media only screen and (max-width: 650px) {
-    #nav{
+    /* #nav{
       width: 60vw;
       height: 8.5rem;
       margin: 1.5rem auto 0rem;
@@ -643,7 +646,7 @@
     @keyframes navAni {
       from {height: 0px;}
       to {height: 8.5rem;}
-    }
+    } */
     #introImg {
       width: 90%;
     }
@@ -653,15 +656,15 @@
     h1 {
       font-size: 1.6rem;
     }
-    h2, p {
-      font-size: 0.8rem;
+    h2, p, ul, em {
+      font-size: 1rem;
       line-height: 1.6rem;
     }
     h3 {
       font-size: 1rem;
     }
     #emmaVidContainer {
-      height: 53vh;
+      height: 52vh;
     }
     #myVideo {
       width:100%;
@@ -676,6 +679,9 @@
       column-gap: 2rem;
       position: relative;
       margin-top: 3rem;
+    }
+    #skills{
+      justify-content: center;
     }
     
   }
