@@ -12,15 +12,15 @@ function scrollFunc() {
        setTimeout(testScroll, 3500)
 }
 
-function navShowHide() {
-    navCount += 1;
-    console.log(navCount)
-    if (navCount % 2 == 1){
-        document.getElementById("nav").style.display = "flex" 
-        document.getElementById("nav").style.width = "60vw" 
-        document.getElementById("nav").style.justifyContent = "space-evenly" 
-    } else {
-        document.getElementById("nav").style.display = "none" 
-    }
-}
+// function navShowHide() {
+//     navCount += 1;
+//     console.log(navCount)
+//     if (navCount % 2 == 1){
+//         document.getElementById("nav").style.display = "flex" 
+//         document.getElementById("nav").style.width = "60vw" 
+//         document.getElementById("nav").style.justifyContent = "space-evenly" 
+//     } else {
+//         document.getElementById("nav").style.display = "none" 
+//     }
+// }
  
