@@ -649,5 +649,10 @@
     h3 {
       font-size: 1rem;
     }
+   #myVideo {
+      position: relative;
+      left: -51%;
+      width: 200vw;
+    }
     
   }
