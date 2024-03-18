@@ -509,7 +509,7 @@
       margin: 0.3rem;
     }
     footer {
-      width: 60vw;
+      width: 100vw;
       display: flex;
       flex-wrap: wrap;
       row-gap: 1rem;
