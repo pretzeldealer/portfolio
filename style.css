@@ -685,3 +685,21 @@
     }
     
   }
+
+#announcement{
+  background-color: #8f60a6;
+  color: #110E14;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0px;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  text-align: center;
+  animation-name: announceAni;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes announceAni {
+    from {background-color: #8f60a6;}
+    to {background-color: white;}
+  }
